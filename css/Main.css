@@ -2391,6 +2391,9 @@
   .container .main .main__section4 .section4__container .section4__subSlideInfo div:last-child {
     display: none;
   }
+  .container .main .main__section4 .section4__container .section4__subSlideInfo div:first-child {
+    display: flex;
+  }
   .container .main .main__section5 {
     margin-bottom: 40px;
   }
