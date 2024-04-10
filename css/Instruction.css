@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@font-face {
+  font-family: "e-Ukraine";
+  src: url("/fonts/e-Ukraine-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "e-Ukraine";
+  src: url("/fonts/e-Ukraine-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "e-Ukraine";
+  src: url("/fonts/e-Ukraine-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+.container .header {
+  margin-bottom: 80px;
+}
+.container .header .nav {
+  padding: 2.08vw 4.16vw 0 4.16vw;
+}
+.container .header .nav .nav__block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.container .header .nav .nav__block .header__liFirst {
+  font: bold 28px "e-Ukraine";
+  color: #000;
+  margin-right: 2.08vw;
+}
+.container .header .nav .nav__block .header__ol {
+  display: flex;
+  align-items: center;
+}
+.container .header .nav .nav__block .header__ol .header__li {
+  margin-right: 3.125vw;
+}
+.container .header .nav .nav__block .header__ol .header__li a {
+  text-decoration: none;
+  font: 400 24px "Manrope";
+  color: #000;
+}
+.container .header .nav .nav__block .header__ol .header__li:last-child {
+  margin: 0;
+}
+.container .header .nav .header__nav_block a {
+  text-decoration: none;
+  font: 500 16px "Manrope";
+}
+.container .header .nav .header__nav_block a:first-child {
+  color: #8C8C8C;
+}
+.container .main {
+  padding: 0 80px;
+}
+.container .main .main__section1 .section1__container .section1__wrapper {
+  margin-bottom: 60px;
+}
+.container .main .main__section1 .section1__container .section1__wrapper .section1__text:nth-child(1) {
+  font: 700 48px "e-Ukraine";
+  margin-bottom: 60px;
+}
+.container .main .main__section1 .section1__container .section1__wrapper .section1__text:nth-child(2) {
+  font: 400 24px "Manrope";
+  margin-bottom: 30px;
+}
+.container .main .main__section1 .section1__container .section1__wrapper .section1__text:nth-child(3) {
+  font: 400 24px "Manrope";
+}
+.container .main .main__section1 .section1__container .section1__wrapper .section1__text:nth-child(4) {
+  font: 600 24px "Manrope";
+}
+.container .main .main__section1 .section1__container .section1__wrapper2 {
+  display: flex;
+}
+.container .main .main__section1 .section1__container .section1__wrapper2 .wrapper2__block_photo {
+  max-width: 100%;
+}
+.container .main .main__section1 .section1__container .section1__wrapper2 .wrapper2__block_photo img {
+  width: 100%;
+  height: 100%;
+}
+.container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block {
+  flex-grow: 1;
+  width: 44.79vw;
+  border: 2px solid black;
+  border-radius: 30px;
+  padding: 80px 80px 60px 80px;
+}
+.container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .wrapper2__counter_block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .wrapper2__counter_block .wrapper2__counter_text {
+  display: flex;
+}
+.container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .wrapper2__counter_block .wrapper2__counter_text p {
+  font: 700 48px "e-Ukraine";
+}
+.container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .wrapper2__counter_block .wrapper2__counter_text p:nth-child(4), .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .wrapper2__counter_block .wrapper2__counter_text p:nth-child(3) {
+  color: grey;
+}
+.container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .wrapper2__counter_block .wrapper2__counter_text p:nth-child(1) {
+  margin-right: 15px;
+}
+.container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .wrapper2__counter_block .custom-button .custom-prev {
+  margin-right: 3.125vw;
+}
+.container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container {
+  max-width: 100%;
+  height: 100%;
+}
+.container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper {
+  height: min-content;
+  width: 100%;
+}
+.container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper {
+  height: min-content;
+}
+.container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) {
+  height: 150px;
+  position: relative;
+  height: min-content;
+}
+.container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block-text p {
+  color: #000;
+  font: 400 20px "Manrope";
+  margin-bottom: 20px;
+}
+.container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block {
+  height: 180px;
+  overflow: scroll;
+  overflow-x: hidden;
+  padding-right: 20px;
+}
+.container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block .slide1__block_scroll {
+  display: flex;
+  justify-content: space-between;
+}
+.container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block .slide1__block_scroll p, .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block .slide1__block_scroll select {
+  font: 600 24px "Manrope";
+}
+.container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block .slide1__block_scroll select {
+  border: 0;
+}
+.container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block .slide1__block_scroll select option {
+  width: 20px;
+  font: 600 8px "Manrope";
+}
+.container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block .slide1__block_scroll2 {
+  height: 150px;
+}
+.container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block .slide1__block_scroll2 a {
+  display: inline-block;
+  font: 400 24px "Manrope";
+  color: #058ED9;
+  margin-bottom: 10px;
+}
+.container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-pagination {
+  padding-top: 30px;
+}
+.container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(2), .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(3), .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(5), .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(6) {
+  font: 400 20px "Manrope";
+}
+.container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(4) {
+  font: 400 20px "Manrope";
+}
+.container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(4) ol {
+  list-style: inside;
+}
+.container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(4) ol li {
+  margin-bottom: 10px;
+}
+.container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(4) ol li:last-child {
+  margin-bottom: 20px;
+}
+.container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(4) p:first-child {
+  margin-bottom: 30px;
+}
+.container .footer {
+  display: flex;
+  justify-content: space-Between;
+  padding: 3.124vw 3.125vw 4.16vw;
+  background: rgb(26, 86, 83);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.container .footer .header__liFirst {
+  margin-right: 336px;
+  font: bold 28px "e-Ukraine";
+  color: #fff;
+}
+.container .footer .footer_wrapper {
+  display: flex;
+}
+.container .footer .footer_wrapper .footer__list1 li, .container .footer .footer_wrapper .footer__list2 li {
+  font: 300 20px "Manrope";
+  color: rgb(245, 245, 245);
+  margin-bottom: 20px;
+}
+.container .footer .footer_wrapper .footer__list1 li:first-child, .container .footer .footer_wrapper .footer__list2 li:first-child {
+  font: 500 20px "Manrope";
+}
+.container .footer .footer_wrapper .footer__list1 {
+  margin-right: 215px;
+}
+.container .footer .footer_wrapper .footer__list1 li:first-child {
+  margin-bottom: 40px;
+}
+.container .footer .footer_wrapper .footer__list1 li:last-child {
+  margin: 0;
+}
+.container .footer .footer_wrapper .footer__list2 li:last-child {
+  margin: 0;
+}
+.container .footer .footer_wrapper .footer__list2 li a {
+  text-decoration: none;
+  font: 300 20px "Manrope";
+  color: #fff;
+}
+
+.swiper-slide1_block::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+.swiper-slide1_block::-webkit-scrollbar-track {
+  background-color: #999;
+}
+
+.swiper-slide1_block::-webkit-scrollbar-track-piece {
+  background-color: #ffffff;
+}
+
+.swiper-slide1_block::-webkit-scrollbar-thumb {
+  height: 50px;
+  background-color: #666;
+  border-radius: 3px;
+}
+
+.swiper-slide1_block::-webkit-scrollbar-corner {
+  background-color: #999;
+}
+
+.section1__block2__container::-webkit-resizer {
+  background-color: #666;
+}/*# sourceMappingURL=Instruction.css.map */
