@@ -25,6 +25,9 @@ li1.forEach((item) => {
         document.querySelector('.container').style.height = 'auto';
         console.log("hello");
         ol.style.display = "none"
+        burger.style.background = "rgb(0,0,0,0.0001)"
+        document.querySelector('.burger__1').style.opacity = 1
+        document.querySelector('.burger__2').style.opacity = 1
     });
 });
 
