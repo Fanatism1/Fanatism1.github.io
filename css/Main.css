@@ -483,7 +483,7 @@
 @media screen and (max-width: 1280px) {
   .container .header {
     margin-bottom: 70px;
-    height: 1050px;
+    height: 60vh;
     background-image: url("../img/bg-header.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -882,8 +882,8 @@
     padding-left: 4.16vw;
   }
   .container .main .main__section5 .section5__container .section5__block_photo img {
-    width: 350px;
-    height: 250px;
+    width: 400px;
+    height: 300px;
   }
   .container .footer {
     padding: 4.12vw 7.16vw 6.25vw 4.16vw;
@@ -925,7 +925,7 @@
 @media screen and (max-width: 1050px) {
   .container .header {
     margin-bottom: 70px;
-    height: 550px;
+    height: 500px;
     background-image: url("../img/bg-header.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -1378,7 +1378,7 @@
     overflow: hidden;
     position: relative;
     margin-bottom: 40px;
-    height: 60vh;
+    height: 70vh;
     background-image: url("../img/bg-header.png");
     background-size: cover;
     background-repeat: no-repeat;
