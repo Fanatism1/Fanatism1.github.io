@@ -29,80 +29,88 @@
     .header
         margin-bottom: 140px
         .nav
-            padding: 40px 0 0 80px
+            width: auto
+            display: flex
+            justify-content: space-between
+            padding:2.08vw 4.16vw 0 4.16vw       //40px 0 0 80px
+            .burger__container
+                display: none
+            .header__liFirst
+                //margin-right: 17.5vw//336px
+                font: bold 28px 'e-Ukraine'
+                color: #1A5653
+                margin-right: 40px
             .header__ol
                 display: flex
                 align-items: center
-                .header__liFirst
-                    margin-right: 336px
-                    font: bold 28px 'e-Ukraine'
-                    color: #000
                 .header__li
-                    margin-right: 60px
+                    text-align: center
+                    margin-right: 3.125vw//60px
                     a
                         text-decoration: none
                         font: 400 24px 'Manrope'
-                        color: #000
-            .header__nav_block
-                display: flex
-                a
-                    font: 500 16px 'Manrope'
-                    text-decoration: none
-                    color: rgb(26,86,83)
-                a:first-child
-                    margin-right: 17px
-                    color: #8a8a8a
-            .header__section
-                height: 100%
-                display: flex
-                justify-content: center
-                align-items: center
+                        color: #1A5653
+                .header__li:last-child
+                    margin: 0
+                    cursor: pointer
+        .header__section
+            height: 90%
+            display: flex
+            justify-content: center
+            align-items: center
+            div
+                h1
+                    font: 700 64px 'e-Ukraine'
+                    color: #0b0a0a8e8
+                    margin-bottom: 50px
+                p
+                    font: 400 32px 'Manrope'
+                    color: #1A5653
+                    text-align: center
+                    margin-bottom: 90px
                 div
-                    h1
-                        font: 700 64px 'e-Ukraine'
-                        color: #fff
-                        margin-bottom: 50px
-                    p
-                        font: 400 32px 'Manrope'
-                        color: #fff
-                        text-align: center
-                        margin-bottom: 90px
-                    div
-                        display: flex
-                        justify-content: center
-                        button
+                    display: flex
+                    justify-content: center
+                    button
+                        padding: 24px 60px
+                        background:  #1A5653
+                        border-radius: 999px
+                        a
+                            text-decoration: none
                             text-align: center
-                            padding: 24px 60px
-                            background: #fff
-                            border-radius: 999px
                             font: 600 24px 'Manrope'
+                            color:  #1A5653
     .main
         overflow: auto
         margin-bottom: 120px
-        padding: 0 80px
+        padding: 0 4.16vw 0 4.16vw
         .main__section1
             .section1__wrapper
                 display: flex
                 justify-content: space-between
                 .section1__block
                     padding-top: 40px
+                    margin-right: 30px
                     h1
                         margin-bottom: 70px
-                        font: 700 48px 'e-Ukraine'
+                        font: 700 48px 'e-Ukraine' //48
+                        height: min-content
+                        width: max-content
                     .section1__changeProfile_block
+                        display: block
                         text-align: center
-                        padding: 24px 60px 
+                        padding: 15px 0//24px 60px 
                         border-radius: 999px
                         background: rgb(26, 86, 83)
-                        a
+                        .section1__changeProfile
                             text-decoration: none
                             font: 600 24px 'Manrope'
                             color: #fff
                 .section1__block2
-                    width: 1000px
+                    width: 1200px
                     border: 1px solid black
                     border-radius: 30px
-                    padding: 60px 80px 80px 80px
+                    padding: 3.25vw 4.16vw 4.16vw 4.16vw//60px 80px 80px 80px
                     .section1__historyOrder
                         width: max-content
                         font: 600 24px 'Manrope'
@@ -112,11 +120,12 @@
                     .section1__block2__container
                         overflow: scroll
                         overflow-x: hidden
-                        height: 300px
+                        height: 420px
+                        padding-right: 30px
                         .section1__block2_order
                             display: flex
                             justify-content: space-between
-                            margin: 0 80px 30px 0
+                            margin: 0 0 30px 0
                             border-bottom: 1px solid grey
                             padding-bottom: 30px
                             .section1__ol_1
@@ -129,40 +138,39 @@
                             .section1__ol_2
                                 li:first-child
                                     opacity: 0
+            .section1__changeProfile_block
+                display: none
     .footer
-        width: 100%
-        display: flex
-        justify-content: space-between
-        padding: 60px 80px 120px 80px
+        padding: 3.12vw 4.16vw 6.25vw 4.16vw  //60px 80px 120px 80px
         background: rgb(26, 86, 83)
         border-top-left-radius: 30px
         border-top-right-radius: 30px
-        .header__liFirst
-            font: bold 28px 'e-Ukraine'
-            color: #fff
-        .footer_wrapper
+        div
             display: flex
-            .footer__list1 ,.footer__list2
-                li
-                    font: 300 20px 'Manrope'
-                    color: rgb(245,245,245)
-                    margin-bottom: 20px
-                li:first-child
-                    font: 500 20px 'Manrope'  
-            .footer__list1
-                margin-right: 215px
-                li:first-child
-                    margin-bottom: 40px
-                li:last-child
-                    margin: 0
-            .footer__list2
-                li:last-child
-                    margin: 0
-                li
-                    a
-                        text-decoration: none
+            justify-content: space-between
+            .header__liFirst
+                font: bold 28px 'e-Ukraine'
+                color: #fff
+            .footer_wrapper
+                display: flex
+                .footer__list1 ,.footer__list2
+                    li
+                        color: rgb(245,245,245)
                         font: 300 20px 'Manrope'
-                        color: #fff
+                        margin-bottom: 20px
+                        a
+                            text-decoration: none
+                            color: rgb(245,245,245)
+                .footer__list1
+                    margin-right: 11.97vw //215px
+                    li:first-child
+                        font: 500 20px 'Manrope'  
+                        margin-bottom: 67px
+                    li:last-child
+                        margin: 0
+                .footer__list2
+                    li:last-child
+                        margin: 0
 
 .section1__block2__container::-webkit-scrollbar
     width: 3px 
@@ -179,3 +187,547 @@
     background-color: #999
 .section1__block2__container::-webkit-resizer
     background-color: #666
+
+@media screen and ( max-width:1280px  )//1236px
+    .container
+        .header
+            margin-bottom: 70px
+            //max-height: 550px
+            //height: 100vh//1050px
+            
+            .nav
+                display: flex
+                justify-content: space-between
+                padding:2.08vw 4.16vw 0 4.16vw       //40px 0 0 80px
+                .header__liFirst
+                    //margin-right: 17.5vw//336px
+                    font: bold 24px 'e-Ukraine'
+                    margin-right: 40px
+                .header__ol
+                    display: flex
+                    align-items: center
+                    .header__li
+                        margin-right: 3.125vw//60px
+                        a
+                            text-decoration: none
+                            font: 400 15px 'Manrope'
+                    .header__li:last-child
+                        margin: 0
+            .header__section
+                align-items: center
+                display: flex
+                justify-content: center
+                div
+                    h1
+                        font: 700 38px 'e-Ukraine'
+                        margin-bottom: 50px
+                    p
+                        font: 400 20px 'Manrope'
+                        text-align: center
+                        margin-bottom: 60px
+                    div
+                        display: flex
+                        justify-content: center
+                        button
+                            border: 0
+                            padding: 8px 30px
+                            border-radius: 999px
+                            a
+                                text-decoration: none
+                                text-align: center
+                                font: 600 20px 'Manrope'
+        .main
+            overflow: auto
+            margin-bottom: 120px
+            padding: 0 4.16vw 0 4.16vw
+            .main__section1
+                .section1__wrapper
+                    display: flex
+                    justify-content: space-between
+                    .section1__block
+                        padding-top: 40px
+                        margin-right: 30px
+                        h1
+                            margin-bottom: 70px
+                            font: 700 38px 'e-Ukraine' //48
+                            height: min-content
+                            width: max-content
+                        .section1__changeProfile_block
+                            display: block
+                            text-align: center
+                            padding: 15px 0//24px 60px 
+                            border-radius: 999px
+                            background: rgb(26, 86, 83)
+                            .section1__changeProfile
+                                text-decoration: none
+                                font: 600 16px 'Manrope'
+                                color: #fff
+                    .section1__block2
+                        width: 1000px
+                        border: 1px solid black
+                        border-radius: 30px
+                        padding: 50px//60px 80px 80px 80px
+                        .section1__historyOrder
+                            width: max-content
+                            font: 600 24px 'Manrope'
+                            margin-bottom: 70px
+                            border-bottom: 2px solid black
+                            padding-bottom: 10px
+                        .section1__block2__container
+                            overflow: scroll
+                            overflow-x: hidden
+                            height: 300px
+                            padding-right: 30px
+                            .section1__block2_order
+                                display: flex
+                                justify-content: space-between
+                                margin: 0 0 30px 0
+                                border-bottom: 1px solid grey
+                                padding-bottom: 30px
+                                .section1__ol_1
+                                    li:first-child
+                                        color: rgb(140, 140, 140)
+                                        margin-bottom: 20px
+                                .section1__ol_2 ,.section1__ol_1
+                                    li
+                                        font: 400 24px 'Manrope'
+                                .section1__ol_2
+                                    li:first-child
+                                        opacity: 0
+                .section1__changeProfile_block
+                    display: none
+        .footer
+            padding: 4.12vw 7.16vw 6.25vw 4.16vw  //60px 80px 120px 80px
+            background: rgb(26, 86, 83)
+            border-top-left-radius: 30px
+            border-top-right-radius: 30px
+            div
+                display: flex
+                justify-content: space-between
+                .header__liFirst
+                    font: bold 20px 'e-Ukraine'
+                    color: #fff
+                    margin-right: 40px
+                .footer_wrapper
+                    display: flex
+                    .footer__list1 ,.footer__list2
+                        li
+                            font: 300 14px 'Manrope'
+                            margin-bottom: 20px
+                            a
+                                text-decoration: none
+                                color: rgb(245,245,245)
+                    .footer__list1
+                        margin-right: 7.97vw //215px
+                        li:first-child
+                            font: 500 16px 'Manrope'  
+                            margin-bottom: 60px
+                        li:last-child
+                            margin: 0
+                    .footer__list2
+                        li:last-child
+                            margin: 0
+@media screen and ( max-width:1050px  )//1236px
+    .container
+        .header
+            margin-bottom: 70px
+            //max-height: 550px
+            //height: 50vh//550px
+            .nav
+                display: flex
+                justify-content: space-between
+                padding:2.08vw 4.16vw 0 4.16vw       //40px 0 0 80px
+                .header__liFirst
+                    //margin-right: 17.5vw//336px
+                    font: bold 16px 'e-Ukraine'
+                    margin-right: 40px
+                .header__ol
+                    display: flex
+                    align-items: center
+                    .header__li
+                        margin-right: 3.125vw//60px
+                        a
+                            text-decoration: none
+                            font: 400 10px 'Manrope'
+                    .header__li:last-child
+                        margin: 0
+                        img
+                            width: 30px
+                            height: 30px
+            .header__section
+                align-items: center
+                display: flex
+                justify-content: center
+                height: 370px
+                div
+                    h1
+                        font: 700 23px 'e-Ukraine'
+                        margin-bottom: 20px
+                    p
+                        font: 400 14px 'Manrope'
+                        text-align: center
+                        margin-bottom: 20px
+                    div
+                        display: flex
+                        justify-content: center
+                        button
+                            border: 0
+                            padding: 4px 15px
+                            border-radius: 999px
+                            a
+                                text-decoration: none
+                                text-align: center
+                                font: 600 14px 'Manrope'
+                                color: #000
+        .main
+            overflow: auto
+            margin-bottom: 120px
+            padding: 0 4.16vw 0 4.16vw
+            .main__section1
+                .section1__wrapper
+                    display: flex
+                    justify-content: space-between
+                    .section1__block
+                        padding-top: 40px
+                        margin-right: 30px
+                        h1
+                            margin-bottom: 70px
+                            font: 700 30px 'e-Ukraine' //48
+                        .section1__changeProfile_block
+                            width: 200px
+                            display: block
+                            text-align: center
+                            padding: 10px 0//24px 60px 
+                            border-radius: 999px
+                            background: rgb(26, 86, 83)
+                            .section1__changeProfile
+                                text-decoration: none
+                                font: 600 14px 'Manrope'
+                                color: #fff
+                    .section1__block2
+                        width: 1000px
+                        border: 1px solid black
+                        border-radius: 30px
+                        padding: 30px//60px 80px 80px 80px
+                        .section1__historyOrder
+                            width: max-content
+                            font: 600 24px 'Manrope'
+                            margin-bottom: 70px
+                            border-bottom: 2px solid black
+                            padding-bottom: 10px
+                        .section1__block2__container
+                            overflow: scroll
+                            overflow-x: hidden
+                            height: 300px
+                            .section1__block2_order
+                                display: flex
+                                justify-content: space-between
+                                margin: 0 20px 30px 0
+                                border-bottom: 1px solid grey
+                                padding-bottom: 30px
+                                .section1__ol_1
+                                    li:first-child
+                                        color: rgb(140, 140, 140)
+                                        margin-bottom: 20px
+                                .section1__ol_2 ,.section1__ol_1
+                                    li
+                                        font: 400 24px 'Manrope'
+                                .section1__ol_2
+                                    li:first-child
+                                        opacity: 0
+                .section1__changeProfile_block
+                    display: none
+        .footer
+            padding: 4.12vw 7.16vw 6.25vw 4.16vw  //60px 80px 120px 80px
+            background: rgb(26, 86, 83)
+            border-top-left-radius: 30px
+            border-top-right-radius: 30px
+            div
+                display: flex
+                justify-content: space-between
+                .header__liFirst
+                    font: bold 20px 'e-Ukraine'
+                    color: #fff
+                    margin-right: 40px
+                .footer_wrapper
+                    display: flex
+                    .footer__list1 ,.footer__list2
+                        li
+                            font: 300 14px 'Manrope'
+                            margin-bottom: 20px
+                            a
+                                text-decoration: none
+                                color: rgb(245,245,245)
+                    .footer__list1
+                        margin-right: 7.97vw //215px
+                        li:first-child
+                            font: 500 16px 'Manrope'  
+                            margin-bottom: 60px
+                        li:last-child
+                            margin: 0
+                    .footer__list2
+                        li:last-child
+                            margin: 0
+@media screen and ( max-width:768px  )//1236px
+    .container
+        .header
+            overflow: hidden
+            position: relative
+            margin-bottom: 0//40px
+            //max-height: 550px
+            .nav
+                position: relative
+                overflow: hidden
+                display: flex
+                justify-content: space-between
+                padding: 0//2.08vw 4.16vw 0 4.16vw       //40px 0 0 80px
+                .header__liFirst
+                    display: none
+                    //margin-right: 17.5vw//336px
+                    font: bold 16px 'e-Ukraine'
+                    color: #fff
+                    margin-right: 0
+                .burger__container
+                    display: block
+                    box-sizing: border-box
+                    padding: 2.08vw 4.16vw 0 4.16vw//20px 20px 0 20px
+                    width: 100%
+                    height: auto//100vh
+                    position: relative
+                    .burger__block
+                        width: 100%
+                        display: flex
+                        align-items: center
+                        justify-content: space-between
+                        margin-bottom: 30px
+                        .burder__logo_block
+                            display: flex
+                            align-items: center
+                            .burder__logo_wrapper
+                                width: 30px
+                                height: min-content
+                                div
+                                    border-bottom: 2px solid #1A5653
+                                    margin-bottom: 5px
+                                div:nth-child(1)
+                                div:nth-child(2)
+                                div:nth-child(3)
+                                    margin: 0
+                        .header__liFirst1  
+                            font: bold 16px 'e-Ukraine'
+                            color: #1A5653
+                        .burger__profile
+                            img
+                                width: 30px
+                                height: 30px
+                    .burger__block2
+                        display: none
+                        width: 100%
+                        height: 100vh
+                        justify-content: center
+                        .header__ol1
+                            position: static
+                            display: block
+                            width: min-content
+                            height: min-content
+                            .header__li1
+                                text-align: center
+                                display: block
+                                position: static
+                                margin: 0
+                                margin-bottom: 10px
+                                a
+                                    text-decoration: none
+                                    font: 400 25px 'Manrope'
+                                    color: #fff
+                .header__ol
+                    display: none//flex
+                    align-items: center
+                    .header__li
+                        display: block
+                        margin-right: 3.125vw//60px
+                        a
+                            text-decoration: none
+                            font: 400 10px 'Manrope'
+                            color: #fff
+                    .header__li:last-child
+                        display: block
+                        margin: 0
+                        img
+                            width: 30px
+                            height: 30px
+            .header__section
+                display: flex
+                justify-content: center
+                height: 60%
+                div
+                    div
+                        text-align: center
+                        h1
+                            width: min-content
+                            font: 700 23px 'e-Ukraine'
+                            color: #fff
+                            margin-bottom: 20px
+                            display: block
+                    p
+                        font: 400 14px 'Manrope'
+                        color: #fff
+                        text-align: center
+                        margin-bottom: 20px
+                    div
+                        display: flex
+                        justify-content: center
+                        button
+                            border: 0
+                            padding: 4px 15px
+                            background: #fff
+                            border-radius: 999px
+                            a
+                                text-decoration: none
+                                text-align: center
+                                font: 600 14px 'Manrope'
+                                color: #000
+        .main
+            overflow: auto
+            margin-bottom: 70px//120px
+            padding: 2.08vw 4.16vw 0 4.16vw//10px//0 80px
+            .main__section1
+                .section1__wrapper
+                    display: block
+                    justify-content: space-between
+                    .section1__block
+                        padding-top: 0//40px
+                        h1
+                            margin-bottom: 70px
+                            font: 700 28px 'e-Ukraine'//48
+                        .section1__changeProfile_block
+                            display: none
+                            text-align: center
+                            padding: 24px 60px 
+                            border-radius: 999px
+                            background: rgb(26, 86, 83)
+                            .section1__changeProfile
+                                display: none
+                                text-decoration: none
+                                font: 600 24px 'Manrope'
+                                color: #fff
+                    .section1__block2
+                        width: auto//1000px
+                        border: 1px solid black
+                        border-radius: 30px
+                        padding: 20px//60px 80px 80px 80px
+                        margin-bottom: 50px
+                        .section1__historyOrder_block
+                            .section1__historyOrder
+                                width: max-content
+                                font: 600 24px 'Manrope'
+                                margin-bottom: 30px
+                                border-bottom: 2px solid black
+                                padding-bottom: 10px
+                        .section1__block2__container
+                            overflow: scroll
+                            overflow-x: hidden
+                            height: 300px
+                            .section1__block2_order
+                                display: flex
+                                justify-content: space-between
+                                margin: 0//0 80px 30px 0
+                                border-bottom: 1px solid grey
+                                padding-bottom: 30px
+                                padding-right: 15px
+                                .section1__ol_1
+                                    li:first-chisld
+                                        color: rgb(140, 140, 140)
+                                        margin-bottom: 20px
+                                .section1__ol_2 ,.section1__ol_1
+                                    li
+                                        font: 400 24px 'Manrope'
+                                .section1__ol_2
+                                    li:first-child
+                                        opacity: 0
+                .section1__changeProfile_block
+                    display: block
+                    text-align: center
+                    padding: 15px 0
+                    border-radius: 999px
+                    background: rgb(26, 86, 83)
+                    .section1__changeProfile
+                        text-decoration: none
+                        font: 600 20px 'Manrope'
+                        color: #fff
+        .footer
+            display: flex
+            padding: 3.12vw 4.16vw 6.25vw 4.16vw  //60px 80px 120px 80px
+            background: rgb(26, 86, 83)
+            border-top-left-radius: 10px//30px
+            border-top-right-radius: 10px//30px
+            div
+                width: 100%
+                display: flex
+                justify-content: space-between
+                .header__liFirst
+                    display: block
+                    text-align: center
+                    font: bold 18px 'e-Ukraine'
+                    color: #fff
+                    margin-bottom:20px
+                .footer_wrapper
+                    width: auto
+                    display: flex
+                    .footer__list1 ,.footer__list2
+                        li
+                            font: 300 11px 'Manrope'
+                            margin-bottom: 5px
+                            a
+                                text-decoration: none
+                                color: rgb(245,245,245)
+                    .footer__list1
+                        margin-right:3vw //11.97px //215px
+                        margin-bottom: 0//20px
+                        li:first-child
+                            font: 500 12px 'Manrope'  
+                            margin-bottom: 20px
+                        li:last-child
+                            margin: 0
+                    .footer__list2
+                        li:last-child
+                            margin: 0
+@media screen and ( max-width:425px  )
+    .container
+        .footer
+            display: flex
+            justify-content: center
+            padding: 40px 0 //1.5vw 2.08vw 3.10vw 2.08vw  //60px 80px 120px 80px
+            background: rgb(26, 86, 83)
+            border-top-left-radius: 10px//30px
+            border-top-right-radius: 10px//30px
+            div
+                display: block
+                .header__liFirst
+                    display: block
+                    text-align: center
+                    font: bold 18px 'e-Ukraine'
+                    color: #fff
+                    margin: 0
+                    margin-bottom:20px
+                .footer_wrapper
+                    display: block
+                    .footer__list1 ,.footer__list2
+                        li
+                            text-align: center
+                            font: 300 9px 'Manrope'
+                            margin-bottom: 5px
+                            a
+                                text-decoration: none
+                                color: rgb(245,245,245)
+                    .footer__list1
+                        margin-right: 0//3vw //11.97px //215px
+                        margin-bottom: 20px
+                        li:first-child
+                            font: 500 10px 'Manrope'  
+                            margin-bottom: 12px
+                        li:last-child
+                            margin: 0
+                    .footer__list2
+                        li:last-child
+                            margin: 0

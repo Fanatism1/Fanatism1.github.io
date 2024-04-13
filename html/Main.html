@@ -47,7 +47,7 @@
                     <li class="header__li"><a href="#needItem" class="">Необхідні комплектуючі</li>
                     <li class="header__li"><a href="#photoReport" class="">Фотозвіт</a></li>
                     <li class="header__li"><a href="#footer" class="">Контакти</a></li>
-                    <li class="header__li"><img src="/img/user accountIcons.png" alt=""></li>
+                    <li class="header__li"><a href="/html/MyProfile.html"><img src="/img/user accountIcons.png" alt=""></a></li>
                 </ol>
             </nav>
             <section class="header__section">
@@ -181,20 +181,20 @@
                             <div class="section3__block2_text_block1">
                                 <p class="section3__block2__text1">Переказ на карту</p>
                                 <div class="section3__block2_addMoney2">
-                                    <p class="section3__block2_text3">5375411201866162</p>
+                                    <p id="textToCopy_1" class="section3__block2_text3">5375411201866162</p>
                                     <div>
                                         <img src="/img/стрілка.png" alt="">
-                                        <p class="section3__block2_text2">Скопіювати</p>
+                                        <p id="buttonCopy_1" class="section3__block2_text2">Скопіювати</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="section3__block2_text_block1">
                                 <p class="section3__block2__text1">Переказ на карту</p>
                                 <div class="section3__block2_addMoney2">
-                                    <p class="section3__block2_text3">asvystov@gmail.com</p>
+                                    <p id="textToCopy_2" class="section3__block2_text3">asvystov@gmail.com</p>
                                     <div>
                                         <img src="/img/стрілка.png" alt="">
-                                        <p class="section3__block2_text2">Скопіювати</p>
+                                        <p id="buttonCopy_2" class="section3__block2_text2">Скопіювати</p>
                                     </div>
                                 </div>
                             </div>
@@ -400,12 +400,14 @@
                         <li>Відділення НП</li>
                     </ol>
                     <ol class="footer__list2">
-                        <li>Головна</li>
-                        <li>Про нас</li>
-                        <li>Як допомогти?</li>
-                        <li>Необхідні комплектуючі</li>
-                        <li>Фотозвіт</li>
-                        <li>Особистий кабінет</li>
+                        <ol class="footer__list2">
+                            <li><a href="/html/Main.html" class="">Головна</a></li>
+                            <li><a href="/html/Main.html#aboutUs" class="">Про нас</a></li>
+                            <li><a href="/html/Main.html#help" class="">Як допомогти</a></li>
+                            <li><a href="/html/Main.html#needItem" class="">Необхідні комплектуючі</li>
+                            <li><a href="/html/Main.html#photoReport" class="">Фотозвіт</a></li>
+                            <li><a href="#footer" class="">Контакти</a></li>
+                        </ol>
                     </ol>
                 </div>
             </div>
@@ -444,7 +446,7 @@
                 slidesPerView: 4
             },
             1200:{
-                slidesPerView: 4
+                slidesPerView: 3
             },
             1682: {
             slidesPerView: 4

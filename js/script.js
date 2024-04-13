@@ -70,18 +70,27 @@ buttonTeen.addEventListener('click', () => {
 // Встановлення початкових стилів
 toggleButton(buttonTeen, buttonBaby);
 
-
-// const parent =  document.querySelectorAll('.block3__slide_subtext2');
-// const circles = parent.querySelectorAll('.clickCircle');
-// const res = document.querySelectorAll('.clickCircle');
-// circles.forEach(circles => {
-//     res.addEventListener('click', () => {
-//         if(res.src !=="/img/sircleEmptyXl.png"){
-//             res.src = "/img/sircleXl.png";
-//         }else{
-//             res.src =="/img/sircleEmptyXl.png"
-//         }
-//     });
-// });
+////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////
 
 
+var textToCopy_1 = document.getElementById('textToCopy_1').innerText;
+var textToCopy_2 = document.getElementById('textToCopy_2').innerText;
+var copyButton_1 = document.getElementById('buttonCopy_1');
+var copyButton_2 = document.getElementById('buttonCopy_2');
+
+function CopyText(text, button){
+     var textarea = document.createElement('textarea');
+     textarea.value = text;
+     document.body.appendChild(textarea);
+     textarea.select();
+     document.execCommand('copy');
+     document.body.removeChild(textarea);
+     button.innerText = 'Скопійовано!';
+}
+copyButton_1.addEventListener('click', () =>{
+    CopyText(textToCopy_1,copyButton_1)
+})
+copyButton_2.addEventListener('click', () =>{
+    CopyText(textToCopy_2,copyButton_2)
+})
