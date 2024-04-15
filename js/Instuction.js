@@ -38,9 +38,12 @@ li1.forEach((item) => {
 
 
 const instructionCounter = document.querySelector(".wrapper2__counter1")
+const stepCounter = document.getElementById('stepCounter')
 const instructionCustomPrev = document.querySelector(".custom-prev")
 const instructionCustomNext = document.querySelector(".custom-next")
+const instructionCustomNext_2 = document.querySelector(".section1__nextButton")
 let counterValue = parseInt(instructionCounter.textContent)
+let stepCounterValue = parseInt(stepCounter.textContent)
 
 instructionCustomPrev.addEventListener('click' , ()=> {
     if (instructionCounter.textContent == 1 ){
@@ -57,6 +60,9 @@ instructionCustomNext.addEventListener('click' , ()=> {
         instructionCounter.textContent = counterValue
 
     }
-
 })
-console.log(counterValue + 1)
+
+instructionCustomNext_2.addEventListener('click' , ()=> {
+    document.getElementById('changePhoto').src = '/img/fotoinstruction2.png'
+})
+

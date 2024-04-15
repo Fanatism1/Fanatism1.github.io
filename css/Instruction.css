@@ -102,7 +102,7 @@ body {
   color: #1A5653;
 }
 .container .main {
-  padding: 0 80px;
+  padding: 0 4.16vw;
 }
 .container .main .main__section1 .section1__container .section1__wrapper {
   margin-bottom: 60px;
@@ -121,6 +121,12 @@ body {
 .container .main .main__section1 .section1__container .section1__wrapper .section1__text:nth-child(4) {
   font: 600 24px "Manrope";
 }
+.container .main .main__section1 .section1__container .section1__wrapper .section1__button {
+  display: none;
+}
+.container .main .main__section1 .section1__container .section1__wrapper .section1__nextButton {
+  display: none;
+}
 .container .main .main__section1 .section1__container .section1__wrapper2 {
   display: flex;
   margin-bottom: 60px;
@@ -132,12 +138,15 @@ body {
   width: 100%;
   height: auto;
 }
+.container .main .main__section1 .section1__container .section1__wrapper2 .wrapper2__block_photo:last-child {
+  display: none;
+}
 .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block {
   flex-grow: 1;
   width: 44.79vw;
   border: 2px solid black;
   border-radius: 30px;
-  padding: 80px 80px 60px 80px;
+  padding: 50px 30px;
 }
 .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .wrapper2__counter_block {
   display: flex;
@@ -310,7 +319,7 @@ body {
   background-color: #666;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 180px) {
   .container .header {
     margin-bottom: 70px;
   }
@@ -548,7 +557,10 @@ body {
     margin: 0;
   }
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 100vw;
+  }
   .container .header {
     margin-bottom: 70px;
   }
@@ -610,42 +622,88 @@ body {
     color: #000;
   }
   .container .main {
-    padding: 0 80px;
+    padding: 0 4.16vw;
+    max-width: 100vw;
+    margin-bottom: 50px;
   }
   .container .main .main__section1 .section1__container .section1__wrapper {
-    margin-bottom: 60px;
-  }
-  .container .main .main__section1 .section1__container .section1__wrapper .section1__text:nth-child(1) {
-    font: 700 48px "e-Ukraine";
-    margin-bottom: 60px;
-  }
-  .container .main .main__section1 .section1__container .section1__wrapper .section1__text:nth-child(2) {
-    font: 400 24px "Manrope";
+    max-width: 100%;
     margin-bottom: 30px;
   }
+  .container .main .main__section1 .section1__container .section1__wrapper .section1__text:nth-child(1) {
+    font: 700 20px "e-Ukraine";
+    margin-bottom: 20px;
+  }
+  .container .main .main__section1 .section1__container .section1__wrapper .section1__text:nth-child(2) {
+    font: 400 14px "Manrope";
+    margin-bottom: 15px;
+  }
   .container .main .main__section1 .section1__container .section1__wrapper .section1__text:nth-child(3) {
-    font: 400 24px "Manrope";
+    font: 400 14px "Manrope";
   }
   .container .main .main__section1 .section1__container .section1__wrapper .section1__text:nth-child(4) {
-    font: 600 24px "Manrope";
+    font: 600 14px "Manrope";
+    margin-bottom: 40px;
+  }
+  .container .main .main__section1 .section1__container .section1__wrapper .section1__button {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 30px;
+  }
+  .container .main .main__section1 .section1__container .section1__wrapper .section1__button button {
+    display: block;
+    width: 100%;
+    font: 600 14px "Manrope";
+    color: #fff;
+    padding: 10px 0;
+    border: 0;
+    background: #1A5653;
+    border-radius: 30px;
+  }
+  .container .main .main__section1 .section1__container .section1__wrapper .section1__button:first-child {
+    display: block;
+  }
+  .container .main .main__section1 .section1__container .section1__wrapper .section1__nextButton {
+    display: flex;
+    justify-content: end;
+  }
+  .container .main .main__section1 .section1__container .section1__wrapper .section1__nextButton button {
+    font: 500 16px "Manrope";
+    padding: 0;
+    background: #fff;
+    border: none;
+  }
+  .container .main .main__section1 .section1__container .section1__wrapper .section1__nextButton button img {
+    width: 15px;
+    height: 10px;
+  }
+  .container .main .main__section1 .section1__container .section1__wrapper .section1__nextButton button span {
+    margin-right: 5px;
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 {
-    display: flex;
-    margin-bottom: 60px;
+    display: block;
+    margin-bottom: 0;
   }
-  .container .main .main__section1 .section1__container .section1__wrapper2 .wrapper2__block_photo {
+  .container .main .main__section1 .section1__container .section1__wrapper2 .wrapper2__block_photo:first-child {
+    display: none;
     max-width: 100%;
   }
-  .container .main .main__section1 .section1__container .section1__wrapper2 .wrapper2__block_photo img {
+  .container .main .main__section1 .section1__container .section1__wrapper2 .wrapper2__block_photo:first-child img {
     width: 100%;
     height: auto;
   }
+  .container .main .main__section1 .section1__container .section1__wrapper2 .wrapper2__block_photo:last-child {
+    display: block;
+    max-width: 100%;
+  }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block {
-    flex-grow: 1;
-    width: 44.79vw;
+    margin-bottom: 20px;
+    height: 420px;
+    width: 100%;
     border: 2px solid black;
     border-radius: 30px;
-    padding: 80px 80px 60px 80px;
+    padding: 20px;
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .wrapper2__counter_block {
     display: flex;
@@ -656,64 +714,76 @@ body {
     display: flex;
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .wrapper2__counter_block .wrapper2__counter_text p {
-    font: 700 48px "e-Ukraine";
+    font: 700 25px "e-Ukraine";
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .wrapper2__counter_block .wrapper2__counter_text p:nth-child(4), .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .wrapper2__counter_block .wrapper2__counter_text p:nth-child(3) {
     color: grey;
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .wrapper2__counter_block .wrapper2__counter_text p:nth-child(1) {
-    margin-right: 15px;
+    margin-right: 10px;
+  }
+  .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .wrapper2__counter_block .custom-button {
+    display: none;
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .wrapper2__counter_block .custom-button .custom-prev {
-    margin-right: 3.125vw;
+    margin-right: 0;
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container {
     max-width: 100%;
-    height: 100%;
+    height: auto;
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper {
-    height: min-content;
+    height: 310px;
     width: 100%;
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper {
-    height: min-content;
+    height: auto;
+  }
+  .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide {
+    font: 400 14px "Manrope";
+    margin-right: 0;
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) {
-    height: 150px;
-    position: relative;
+    height: auto;
     height: min-content;
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block-text p {
     color: #000;
-    font: 400 20px "Manrope";
+    font: 400 15px "Manrope";
     margin-bottom: 20px;
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block {
-    height: 180px;
+    height: 130px;
     overflow: scroll;
     overflow-x: hidden;
-    padding-right: 20px;
+    padding-right: 0;
+    margin-bottom: 10px;
   }
-  .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block .slide1__block_scroll {
+  .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block .test {
+    height: 100%;
+  }
+  .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block .test .slide1__block_scroll {
     display: flex;
     justify-content: space-between;
   }
-  .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block .slide1__block_scroll p, .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block .slide1__block_scroll select {
-    font: 600 24px "Manrope";
+  .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block .test .slide1__block_scroll p, .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block .test .slide1__block_scroll select {
+    margin-bottom: 5px;
+    height: min-content;
+    font: 600 20px "Manrope";
   }
-  .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block .slide1__block_scroll select {
+  .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block .test .slide1__block_scroll select {
     border: 0;
   }
-  .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block .slide1__block_scroll select option {
+  .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block .test .slide1__block_scroll select option {
     width: 20px;
-    font: 600 8px "Manrope";
+    font: 600 12px "Manrope";
   }
-  .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block .slide1__block_scroll2 {
-    height: 150px;
+  .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block .test .slide1__block_scroll2 {
+    height: auto;
   }
-  .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block .slide1__block_scroll2 a {
+  .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block .test .slide1__block_scroll2 a {
     display: inline-block;
-    font: 400 24px "Manrope";
+    font: 400 16px "Manrope";
     color: #058ED9;
     margin-bottom: 10px;
   }
@@ -721,10 +791,10 @@ body {
     padding-top: 30px;
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(2), .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(3), .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(5), .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(6) {
-    font: 400 20px "Manrope";
+    font: 400 14px "Manrope";
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(4) {
-    font: 400 20px "Manrope";
+    font: 400 16px "Manrope";
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(4) ol {
     list-style: inside;
@@ -736,14 +806,15 @@ body {
     margin-bottom: 20px;
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(4) p:first-child {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
-  .container .main .main__section1 .section1__container .section1__button {
-    display: flex;
+  .container .main .main__section1 .section1__button:last-child {
+    display: none;
     justify-content: end;
-    margin-bottom: 120px;
+    margin-bottom: 0;
   }
-  .container .main .main__section1 .section1__container .section1__button button {
+  .container .main .main__section1 .section1__button:last-child button {
+    display: none;
     font: 600 24px "Manrope";
     color: #fff;
     padding: 14px 60px;
@@ -791,7 +862,7 @@ body {
     margin: 0;
   }
 }
-@media screen and (max-width: 737px) {
+@media screen and (max-width: 769px) {
   .container {
     overflow: hidden;
   }
@@ -934,42 +1005,88 @@ body {
     color: #000;
   }
   .container .main {
-    padding: 0 80px;
+    padding: 0 4.16vw;
+    max-width: 100vw;
+    margin-bottom: 50px;
   }
   .container .main .main__section1 .section1__container .section1__wrapper {
-    margin-bottom: 60px;
-  }
-  .container .main .main__section1 .section1__container .section1__wrapper .section1__text:nth-child(1) {
-    font: 700 48px "e-Ukraine";
-    margin-bottom: 60px;
-  }
-  .container .main .main__section1 .section1__container .section1__wrapper .section1__text:nth-child(2) {
-    font: 400 24px "Manrope";
+    max-width: 100%;
     margin-bottom: 30px;
   }
+  .container .main .main__section1 .section1__container .section1__wrapper .section1__text:nth-child(1) {
+    font: 700 20px "e-Ukraine";
+    margin-bottom: 20px;
+  }
+  .container .main .main__section1 .section1__container .section1__wrapper .section1__text:nth-child(2) {
+    font: 400 14px "Manrope";
+    margin-bottom: 15px;
+  }
   .container .main .main__section1 .section1__container .section1__wrapper .section1__text:nth-child(3) {
-    font: 400 24px "Manrope";
+    font: 400 14px "Manrope";
   }
   .container .main .main__section1 .section1__container .section1__wrapper .section1__text:nth-child(4) {
-    font: 600 24px "Manrope";
+    font: 600 14px "Manrope";
+    margin-bottom: 40px;
+  }
+  .container .main .main__section1 .section1__container .section1__wrapper .section1__button {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 30px;
+  }
+  .container .main .main__section1 .section1__container .section1__wrapper .section1__button button {
+    display: block;
+    width: 100%;
+    font: 600 14px "Manrope";
+    color: #fff;
+    padding: 10px 0;
+    border: 0;
+    background: #1A5653;
+    border-radius: 30px;
+  }
+  .container .main .main__section1 .section1__container .section1__wrapper .section1__button:first-child {
+    display: block;
+  }
+  .container .main .main__section1 .section1__container .section1__wrapper .section1__nextButton {
+    display: flex;
+    justify-content: end;
+  }
+  .container .main .main__section1 .section1__container .section1__wrapper .section1__nextButton button {
+    font: 500 16px "Manrope";
+    padding: 0;
+    background: #fff;
+    border: none;
+  }
+  .container .main .main__section1 .section1__container .section1__wrapper .section1__nextButton button img {
+    width: 15px;
+    height: 10px;
+  }
+  .container .main .main__section1 .section1__container .section1__wrapper .section1__nextButton button span {
+    margin-right: 5px;
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 {
-    display: flex;
-    margin-bottom: 60px;
+    display: block;
+    margin-bottom: 0;
   }
-  .container .main .main__section1 .section1__container .section1__wrapper2 .wrapper2__block_photo {
+  .container .main .main__section1 .section1__container .section1__wrapper2 .wrapper2__block_photo:first-child {
+    display: none;
     max-width: 100%;
   }
-  .container .main .main__section1 .section1__container .section1__wrapper2 .wrapper2__block_photo img {
+  .container .main .main__section1 .section1__container .section1__wrapper2 .wrapper2__block_photo:first-child img {
     width: 100%;
     height: auto;
   }
+  .container .main .main__section1 .section1__container .section1__wrapper2 .wrapper2__block_photo:last-child {
+    display: block;
+    max-width: 100%;
+  }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block {
-    flex-grow: 1;
-    width: 44.79vw;
+    margin-bottom: 20px;
+    height: 420px;
+    width: 100%;
     border: 2px solid black;
     border-radius: 30px;
-    padding: 80px 80px 60px 80px;
+    padding: 20px;
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .wrapper2__counter_block {
     display: flex;
@@ -980,64 +1097,75 @@ body {
     display: flex;
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .wrapper2__counter_block .wrapper2__counter_text p {
-    font: 700 48px "e-Ukraine";
+    font: 700 25px "e-Ukraine";
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .wrapper2__counter_block .wrapper2__counter_text p:nth-child(4), .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .wrapper2__counter_block .wrapper2__counter_text p:nth-child(3) {
     color: grey;
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .wrapper2__counter_block .wrapper2__counter_text p:nth-child(1) {
-    margin-right: 15px;
+    margin-right: 10px;
+  }
+  .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .wrapper2__counter_block .custom-button {
+    display: none;
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .wrapper2__counter_block .custom-button .custom-prev {
-    margin-right: 3.125vw;
+    margin-right: 0;
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container {
     max-width: 100%;
-    height: 100%;
+    height: auto;
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper {
-    height: min-content;
+    height: 310px;
     width: 100%;
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper {
-    height: min-content;
+    height: auto;
+  }
+  .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide {
+    font: 400 14px "Manrope";
+    margin-right: 0;
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) {
-    height: 150px;
-    position: relative;
+    height: auto;
     height: min-content;
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block-text p {
     color: #000;
-    font: 400 20px "Manrope";
+    font: 400 15px "Manrope";
     margin-bottom: 20px;
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block {
-    height: 180px;
+    height: 120px;
     overflow: scroll;
     overflow-x: hidden;
-    padding-right: 20px;
+    padding-right: 0;
+    margin-bottom: 10px;
   }
-  .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block .slide1__block_scroll {
+  .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block .test {
+    height: 100%;
+  }
+  .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block .test .slide1__block_scroll {
     display: flex;
     justify-content: space-between;
   }
-  .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block .slide1__block_scroll p, .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block .slide1__block_scroll select {
-    font: 600 24px "Manrope";
+  .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block .test .slide1__block_scroll p, .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block .test .slide1__block_scroll select {
+    height: min-content;
+    font: 600 12px "Manrope";
   }
-  .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block .slide1__block_scroll select {
+  .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block .test .slide1__block_scroll select {
     border: 0;
   }
-  .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block .slide1__block_scroll select option {
+  .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block .test .slide1__block_scroll select option {
     width: 20px;
-    font: 600 8px "Manrope";
+    font: 600 12px "Manrope";
   }
-  .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block .slide1__block_scroll2 {
-    height: 150px;
+  .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block .test .slide1__block_scroll2 {
+    height: auto;
   }
-  .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block .slide1__block_scroll2 a {
+  .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block .test .slide1__block_scroll2 a {
     display: inline-block;
-    font: 400 24px "Manrope";
+    font: 400 13px "Manrope";
     color: #058ED9;
     margin-bottom: 10px;
   }
@@ -1045,10 +1173,10 @@ body {
     padding-top: 30px;
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(2), .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(3), .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(5), .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(6) {
-    font: 400 20px "Manrope";
+    font: 400 14px "Manrope";
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(4) {
-    font: 400 20px "Manrope";
+    font: 400 12px "Manrope";
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(4) ol {
     list-style: inside;
@@ -1060,14 +1188,15 @@ body {
     margin-bottom: 20px;
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(4) p:first-child {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
-  .container .main .main__section1 .section1__container .section1__button {
-    display: flex;
+  .container .main .main__section1 .section1__button:last-child {
+    display: none;
     justify-content: end;
-    margin-bottom: 120px;
+    margin-bottom: 0;
   }
-  .container .main .main__section1 .section1__container .section1__button button {
+  .container .main .main__section1 .section1__button:last-child button {
+    display: none;
     font: 600 24px "Manrope";
     color: #fff;
     padding: 14px 60px;
@@ -1143,7 +1272,7 @@ body {
   .container .header .nav .burger__container {
     display: block;
     box-sizing: border-box;
-    padding: 20px 20px 0 20px;
+    padding: 0;
     width: 100%;
     height: auto;
     position: relative;
@@ -1261,8 +1390,9 @@ body {
     color: #000;
   }
   .container .main {
-    padding: 10px;
+    padding: 0 4.16vw;
     max-width: 100vw;
+    margin-bottom: 50px;
   }
   .container .main .main__section1 .section1__container .section1__wrapper {
     max-width: 100%;
@@ -1287,9 +1417,10 @@ body {
     width: 100%;
     display: flex;
     justify-content: end;
-    margin-bottom: 0;
+    margin-bottom: 30px;
   }
   .container .main .main__section1 .section1__container .section1__wrapper .section1__button button {
+    display: block;
     width: 100%;
     font: 600 14px "Manrope";
     color: #fff;
@@ -1297,6 +1428,26 @@ body {
     border: 0;
     background: #1A5653;
     border-radius: 30px;
+  }
+  .container .main .main__section1 .section1__container .section1__wrapper .section1__button:first-child {
+    display: block;
+  }
+  .container .main .main__section1 .section1__container .section1__wrapper .section1__nextButton {
+    display: flex;
+    justify-content: end;
+  }
+  .container .main .main__section1 .section1__container .section1__wrapper .section1__nextButton button {
+    font: 500 16px "Manrope";
+    padding: 0;
+    background: #fff;
+    border: none;
+  }
+  .container .main .main__section1 .section1__container .section1__wrapper .section1__nextButton button img {
+    width: 15px;
+    height: 10px;
+  }
+  .container .main .main__section1 .section1__container .section1__wrapper .section1__nextButton button span {
+    margin-right: 5px;
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 {
     display: block;
@@ -1311,7 +1462,8 @@ body {
     height: auto;
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block {
-    height: auto;
+    margin-bottom: 20px;
+    height: 450px;
     width: 100%;
     border: 2px solid black;
     border-radius: 30px;
@@ -1345,13 +1497,14 @@ body {
     height: auto;
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper {
-    height: 450px;
+    height: 330px;
     width: 100%;
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper {
     height: auto;
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide {
+    font: 400 14px "Manrope";
     margin-right: 0;
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) {
@@ -1364,10 +1517,11 @@ body {
     margin-bottom: 20px;
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block {
-    height: 150px;
+    height: 100px;
     overflow: scroll;
     overflow-x: hidden;
     padding-right: 0;
+    margin-bottom: 10px;
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block .test {
     height: 100%;
@@ -1378,7 +1532,7 @@ body {
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block .test .slide1__block_scroll p, .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block .test .slide1__block_scroll select {
     height: min-content;
-    font: 600 15px "Manrope";
+    font: 600 12px "Manrope";
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block .test .slide1__block_scroll select {
     border: 0;
@@ -1392,7 +1546,7 @@ body {
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(1) .swiper-slide1_block .test .slide1__block_scroll2 a {
     display: inline-block;
-    font: 400 13px "Manrope";
+    font: 400 11px "Manrope";
     color: #058ED9;
     margin-bottom: 10px;
   }
@@ -1400,10 +1554,10 @@ body {
     padding-top: 30px;
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(2), .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(3), .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(5), .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(6) {
-    font: 400 20px "Manrope";
+    font: 400 14px "Manrope";
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(4) {
-    font: 400 20px "Manrope";
+    font: 400 10px "Manrope";
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(4) ol {
     list-style: inside;
@@ -1415,7 +1569,7 @@ body {
     margin-bottom: 20px;
   }
   .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .swiper__container .swiper .swiper-wrapper .swiper-slide:nth-child(4) p:first-child {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
   .container .main .main__section1 .section1__button:last-child {
     display: none;

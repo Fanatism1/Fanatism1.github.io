@@ -65,6 +65,9 @@
                         <div class="section1__button">
                             <button type="text">Підтвердити замовлення</button>
                         </div>
+                        <div class="section1__nextButton">
+                            <button class="">Крок <span id="stepCounter">2</span><img src="/img/стрілка чорна.png" alt=""></button>
+                        </div>
                     </div>
                     <div class="section1__wrapper2">
                         <div class="wrapper2__block_photo">
@@ -171,7 +174,7 @@
                             </div>
                         </div>
                         <div class="wrapper2__block_photo">
-                            <img src="/img/fotoinstruction1.png" alt="">
+                            <img id="changePhoto" src="/img/fotoinstruction1.png" alt="">
                         </div>
                     </div>
                     <div class="section1__button">
@@ -213,6 +216,20 @@
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
+            },
+            breakpoints: {
+                300:{
+                    navigation: {
+                        nextEl: ".section1__nextButton",
+                },
+                loop: true,
+                },
+                420:{
+                    navigation: {
+                        nextEl: ".section1__nextButton",
+                        prevEl: ".custom-prev",
+                }
+                },
             },
             navigation: {
                 nextEl: ".custom-next",
