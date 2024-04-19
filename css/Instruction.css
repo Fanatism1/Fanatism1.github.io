@@ -106,13 +106,13 @@ body {
   font: 600 24px "Manrope";
   color: #1A5653;
 }
-.container .header .header__navigation a {
+.container .header .header__navigation a, .container .header .header__navigation p {
   color: black;
   text-decoration: none;
   display: inline;
   font: 400 1.1vw "Manrope";
 }
-.container .header .header__navigation a:first-child {
+.container .header .header__navigation a {
   color: grey;
 }
 .container .main {
@@ -570,7 +570,7 @@ body {
     width: 30px;
     height: 30px;
   }
-  .container .header .header__navigation a {
+  .container .header .header__navigation a, .container .header .header__navigation p {
     font-size: 11px;
   }
   .container .main {
@@ -624,7 +624,6 @@ body {
     cursor: pointer;
     font: 500 16px "Manrope";
     padding: 0;
-    background: #fff;
     border: none;
   }
   .container .main .main__section1 .section1__container .section1__wrapper .section1__nextButton button img {
@@ -922,43 +921,6 @@ body {
     width: 30px;
     height: 30px;
   }
-  .container .header .header__section {
-    display: flex;
-    justify-content: center;
-    height: 60%;
-  }
-  .container .header .header__section div div {
-    text-align: center;
-  }
-  .container .header .header__section div div h1 {
-    width: min-content;
-    font: 700 23px "e-Ukraine";
-    color: #fff;
-    margin-bottom: 20px;
-    display: block;
-  }
-  .container .header .header__section div p {
-    font: 400 14px "Manrope";
-    color: #fff;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  .container .header .header__section div div {
-    display: flex;
-    justify-content: center;
-  }
-  .container .header .header__section div div button {
-    border: 0;
-    padding: 4px 15px;
-    background: #fff;
-    border-radius: 999px;
-  }
-  .container .header .header__section div div button a {
-    text-decoration: none;
-    text-align: center;
-    font: 600 14px "Manrope";
-    color: #000;
-  }
   .container .main {
     padding: 0 4.16vw;
     max-width: 100vw;
@@ -1009,7 +971,6 @@ body {
   .container .main .main__section1 .section1__container .section1__wrapper .section1__nextButton button {
     font: 500 16px "Manrope";
     padding: 0;
-    background: #fff;
     border: none;
   }
   .container .main .main__section1 .section1__container .section1__wrapper .section1__nextButton button img {

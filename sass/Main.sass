@@ -22,6 +22,8 @@
 
 *
     box-sizing: border-box
+body
+    background: linear-gradient(186.67deg, rgba(245, 245, 245, 0.4) 17.93%, rgba(71, 140, 92, 0.4) 62.19%, rgba(245, 245, 245, 0.4) 107.52%)
 
 
 .container
@@ -141,9 +143,6 @@
                             margin: 0
                 .swiper-pagination__block
                     display: none
-        .gradient
-            background: linear-gradient(186.67deg, rgba(245, 245, 245, 0.4) 17.93%, rgba(71, 140, 92, 0.4) 62.19%, rgba(245, 245, 245, 0.4) 107.52%)
-
         .main__section3
             padding:  0 4.16vw//80px
             margin-bottom: 70px
@@ -158,7 +157,8 @@
                 justify-content: space-between
                 gap: 40px
                 .section3__block1
-                    border: 2px solid #000
+                    border-radius: 30px
+                    background: #fff
                     width: 100%//width: 35.41vw//680px
                     padding: 4.16vw//80px
                     .section3__block_title
@@ -193,7 +193,8 @@
                         border-radius: 999px
                         border: 0
                 .section3__block2
-                    border: 2px solid #000
+                    border-radius: 30px
+                    background: #fff
                     width: 100%//35.41vw//680px
                     padding: 4.16vw//80px
                     height: min-content
@@ -260,12 +261,14 @@
                         img:first-child
                             margin-right: 3.125vw//60px
                         img
+                            cursor: pointer
                             width: 48px
                             height: 32px
                 .section4__block2
                     display: flex
                     margin-bottom: 40px
                     button
+                        cursor: pointer
                         text-align: center
                         font: 300 20px 'Manrope'
                         padding: 16px 32px
@@ -306,6 +309,7 @@
                                         font: 400 24px 'Manrope'
                                         color: rgb(0,21,24)
                                 img
+                                    cursor: pointer
                                     width: 60px
                                     height: 60px
                             .block3__slide_subtext3
@@ -377,6 +381,9 @@
                         font: 300 20px 'Manrope'
                         color: rgb(245,245,245)
                         margin-bottom: 20px
+                        a
+                            text-decoration: none
+                            color: rgb(245,245,245)
                 .footer__list1
                     margin-right: 11.97vw //215px
                     li:first-child
@@ -773,11 +780,15 @@
                         .section5__block_title
                             font: 700 18px 'e-Ukraine'
                         div
+                            display: flex
+                            align-items: center
                             a
                                 font: 400 12px 'Manrope'
-                                margin-right: 0
+                                margin-right: 5px
                             img
-                                transform: scale(0.3)
+                                width: 15px
+                                height: 10px
+                                transform: scale(1)
                     .section5__block_photo
                         height: min-content
                         img
@@ -829,6 +840,7 @@
                         justify-content: space-between
                         margin-bottom: 30px
                         .burder__logo_block
+                            cursor: pointer
                             display: flex
                             align-items: center
                             .burder__logo_wrapper
@@ -944,9 +956,14 @@
                     align-items: center
                     margin-bottom: 20px
                     img
+                        cursor: pointer
                         width: 40px
                         height:30px
                     div     
+                        --swiper-pagination-bullet-size: 12px
+                        --swiper-pagination-bullet-width: 12px
+                        --swiper-pagination-bullet-horizontal-gap: 5px
+                        --swiper-pagination-color: #1A5653
                         width: max-content
                         height: min-content
                         position: static
@@ -1072,11 +1089,15 @@
                         .section5__block_title
                             font: 700 18px 'e-Ukraine'
                         div
+                            display: flex
+                            align-items: center
                             a
                                 font: 400 12px 'Manrope'
-                                margin-right: 0
+                                margin-right: 5px
                             img
-                                transform: scale(0.3)
+                                width: 15px
+                                height: 10px
+                                transform: scale(1)
                     .section5__block_photo
                         height: min-content
                         img
@@ -1315,8 +1336,8 @@
                                 font: 400 12px 'Manrope'
                             .section3__block2_addMoney2
                                 align-items: center
-                                padding: 1.5vw 1vw //0.38vw 0.78vw 0.38vw 1.5vw //15px
-                                justify-content: center
+                                padding: 1.5vw 3vw //0.38vw 0.78vw 0.38vw 1.5vw //15px
+                                justify-content: space-between
                                 .section3__block2_text3
                                     font: 400 10px 'Manrope'
                                 div
@@ -1396,7 +1417,8 @@
                         height: 20px
                         display: flex
                         justify-content: space-between
-                        .img
+                        img
+                            cursor: pointer
                     .section4__subSlideInfo 
                         display: block
                         justify-content: space-Between
@@ -1435,22 +1457,29 @@
                     .section5__block_photo
                         height: min-content
                         overflow: hidden
+                        margin-bottom: 20px
                         img
                             width: 150px
                             height: 150px
                     .section5__look-more1
+                        padding: 0 4.16vw
                         display: flex
                         align-items: center
                         justify-content: end
                         a
+                            display: flex
+                            align-items: center
                             font: 400 12px 'Manrope'
                             text-decoration: none
                             color: rgb(0,21,24)
                             margin-right: 0
+                            span
+                                margin-right: 10px
                         a:hover
                             cursor: pointer
                         img
-                            transform: scale(0.3)
+                            width: 15px
+                            height: 10px 
         .footer
             display: flex
             justify-content: center

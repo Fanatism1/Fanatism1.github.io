@@ -24,6 +24,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background: linear-gradient(186.67deg, rgba(245, 245, 245, 0.4) 17.93%, rgba(71, 140, 92, 0.4) 62.19%, rgba(245, 245, 245, 0.4) 107.52%);
+}
+
 .container {
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -171,9 +175,6 @@
 .container .main .main__section2 .section2__container .swiper-pagination__block {
   display: none;
 }
-.container .main .gradient {
-  background: linear-gradient(186.67deg, rgba(245, 245, 245, 0.4) 17.93%, rgba(71, 140, 92, 0.4) 62.19%, rgba(245, 245, 245, 0.4) 107.52%);
-}
 .container .main .main__section3 {
   padding: 0 4.16vw;
   margin-bottom: 70px;
@@ -192,7 +193,8 @@
   gap: 40px;
 }
 .container .main .main__section3 .section3__container .section3__block1 {
-  border: 2px solid #000;
+  border-radius: 30px;
+  background: #fff;
   width: 100%;
   padding: 4.16vw;
 }
@@ -235,7 +237,8 @@
   border: 0;
 }
 .container .main .main__section3 .section3__container .section3__block2 {
-  border: 2px solid #000;
+  border-radius: 30px;
+  background: #fff;
   width: 100%;
   padding: 4.16vw;
   height: min-content;
@@ -321,6 +324,7 @@
   margin-right: 3.125vw;
 }
 .container .main .main__section4 .section4__container .section4__block div img {
+  cursor: pointer;
   width: 48px;
   height: 32px;
 }
@@ -329,6 +333,7 @@
   margin-bottom: 40px;
 }
 .container .main .main__section4 .section4__container .section4__block2 button {
+  cursor: pointer;
   text-align: center;
   font: 300 20px "Manrope";
   padding: 16px 32px;
@@ -379,6 +384,7 @@
   color: rgb(0, 21, 24);
 }
 .container .main .main__section4 .section4__container .section4__block3 .section4__block3_content .section4__block3__slide .block3__slide_subtext2 img {
+  cursor: pointer;
   width: 60px;
   height: 60px;
 }
@@ -464,6 +470,10 @@
   font: 300 20px "Manrope";
   color: rgb(245, 245, 245);
   margin-bottom: 20px;
+}
+.container .footer div .footer_wrapper .footer__list1 li a, .container .footer div .footer_wrapper .footer__list2 li a {
+  text-decoration: none;
+  color: rgb(245, 245, 245);
 }
 .container .footer div .footer_wrapper .footer__list1 {
   margin-right: 11.97vw;
@@ -931,12 +941,18 @@
   .container .main .main__section5 .section5__container .section5__block_info .section5__block_title {
     font: 700 18px "e-Ukraine";
   }
+  .container .main .main__section5 .section5__container .section5__block_info div {
+    display: flex;
+    align-items: center;
+  }
   .container .main .main__section5 .section5__container .section5__block_info div a {
     font: 400 12px "Manrope";
-    margin-right: 0;
+    margin-right: 5px;
   }
   .container .main .main__section5 .section5__container .section5__block_info div img {
-    transform: scale(0.3);
+    width: 15px;
+    height: 10px;
+    transform: scale(1);
   }
   .container .main .main__section5 .section5__container .section5__block_photo {
     height: min-content;
@@ -999,6 +1015,7 @@
     margin-bottom: 30px;
   }
   .container .header .nav .burger__container .burger__block .burder__logo_block {
+    cursor: pointer;
     display: flex;
     align-items: center;
   }
@@ -1137,10 +1154,15 @@
     margin-bottom: 20px;
   }
   .container .main .main__section2 .slider1__click img {
+    cursor: pointer;
     width: 40px;
     height: 30px;
   }
   .container .main .main__section2 .slider1__click div {
+    --swiper-pagination-bullet-size: 12px;
+    --swiper-pagination-bullet-width: 12px;
+    --swiper-pagination-bullet-horizontal-gap: 5px;
+    --swiper-pagination-color: #1A5653;
     width: max-content;
     height: min-content;
     position: static;
@@ -1292,12 +1314,18 @@
   .container .main .main__section5 .section5__container .section5__block_info .section5__block_title {
     font: 700 18px "e-Ukraine";
   }
+  .container .main .main__section5 .section5__container .section5__block_info div {
+    display: flex;
+    align-items: center;
+  }
   .container .main .main__section5 .section5__container .section5__block_info div a {
     font: 400 12px "Manrope";
-    margin-right: 0;
+    margin-right: 5px;
   }
   .container .main .main__section5 .section5__container .section5__block_info div img {
-    transform: scale(0.3);
+    width: 15px;
+    height: 10px;
+    transform: scale(1);
   }
   .container .main .main__section5 .section5__container .section5__block_photo {
     height: min-content;
@@ -1597,8 +1625,8 @@
   }
   .container .main .main__section3 .section3__container .section3__block2 .section3__block2_text_block .section3__block2_addMoney2, .container .main .main__section3 .section3__container .section3__block2 .section3__block2_text_block1 .section3__block2_addMoney2, .container .main .main__section3 .section3__container .section3__block2 .section3__block2_text_bloc2 .section3__block2_addMoney2 {
     align-items: center;
-    padding: 1.5vw 1vw;
-    justify-content: center;
+    padding: 1.5vw 3vw;
+    justify-content: space-between;
   }
   .container .main .main__section3 .section3__container .section3__block2 .section3__block2_text_block .section3__block2_addMoney2 .section3__block2_text3, .container .main .main__section3 .section3__container .section3__block2 .section3__block2_text_block1 .section3__block2_addMoney2 .section3__block2_text3, .container .main .main__section3 .section3__container .section3__block2 .section3__block2_text_bloc2 .section3__block2_addMoney2 .section3__block2_text3 {
     font: 400 10px "Manrope";
@@ -1700,6 +1728,9 @@
     display: flex;
     justify-content: space-between;
   }
+  .container .main .main__section4 .section4__container .section4__slide_button img {
+    cursor: pointer;
+  }
   .container .main .main__section4 .section4__container .section4__subSlideInfo {
     display: block;
     justify-content: space-Between;
@@ -1749,27 +1780,35 @@
   .container .main .main__section5 .section5__container .section5__block_photo {
     height: min-content;
     overflow: hidden;
+    margin-bottom: 20px;
   }
   .container .main .main__section5 .section5__container .section5__block_photo img {
     width: 150px;
     height: 150px;
   }
   .container .main .main__section5 .section5__container .section5__look-more1 {
+    padding: 0 4.16vw;
     display: flex;
     align-items: center;
     justify-content: end;
   }
   .container .main .main__section5 .section5__container .section5__look-more1 a {
+    display: flex;
+    align-items: center;
     font: 400 12px "Manrope";
     text-decoration: none;
     color: rgb(0, 21, 24);
     margin-right: 0;
   }
+  .container .main .main__section5 .section5__container .section5__look-more1 a span {
+    margin-right: 10px;
+  }
   .container .main .main__section5 .section5__container .section5__look-more1 a:hover {
     cursor: pointer;
   }
   .container .main .main__section5 .section5__container .section5__look-more1 img {
-    transform: scale(0.3);
+    width: 15px;
+    height: 10px;
   }
   .container .footer {
     display: flex;

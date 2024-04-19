@@ -56,40 +56,22 @@
   color: #1A5653;
 }
 .container .header .nav .header__ol .header__li:last-child {
+  display: flex;
+  align-items: center;
   margin: 0;
   cursor: pointer;
 }
-.container .header .header__section {
-  height: 90%;
+.container .header .nav .header__ol .header__li:last-child a {
   display: flex;
-  justify-content: center;
   align-items: center;
+  text-decoration: underline;
 }
-.container .header .header__section div h1 {
-  font: 700 64px "e-Ukraine";
-  color: rgba(11, 10, 10, 0.5568627451) 8;
-  margin-bottom: 50px;
+.container .header .nav .header__ol .header__li:last-child a span {
+  margin-right: 15px;
 }
-.container .header .header__section div p {
-  font: 400 32px "Manrope";
-  color: #1A5653;
-  text-align: center;
-  margin-bottom: 90px;
-}
-.container .header .header__section div div {
-  display: flex;
-  justify-content: center;
-}
-.container .header .header__section div div button {
-  padding: 24px 60px;
-  background: #1A5653;
-  border-radius: 999px;
-}
-.container .header .header__section div div button a {
-  text-decoration: none;
-  text-align: center;
-  font: 600 24px "Manrope";
-  color: #1A5653;
+.container .header .nav .header__ol .header__li:last-child a img {
+  width: 2.5vw;
+  height: 2.5vw;
 }
 .container .main .main__section1 {
   display: flex;

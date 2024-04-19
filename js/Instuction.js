@@ -7,14 +7,14 @@ click.addEventListener('click',()=>{
         ol.style.display = "none"
         document.querySelector('.container').style.height = "auto"
         document.querySelector('.header').style.height = 'auto'
-        burger.style.background = "rgb(0,0,0,0.0001)"
+        document.querySelector('.container').style.background = "rgb(0,0,0,0.0001)"
         document.querySelector('.burger__1').style.opacity = 1
         document.querySelector('.burger__2').style.opacity = 1
     }else{
         ol.style.display = 'flex'
         document.querySelector('.container').style.height = 100 +'vh'
         document.querySelector('.header').style.height = 100 +'vh'
-        burger.style.background = "rgb(0,0,0,0.5)"
+        document.querySelector('.container').style.background = "rgb(0,0,0,0.5)"
         document.querySelector('.burger__1').style.opacity = 0
         document.querySelector('.burger__2').style.opacity = 0
     }
@@ -25,7 +25,7 @@ li1.forEach((item) => {
         document.querySelector('.container').style.height = 'auto';
         console.log("hello");
         ol.style.display = "none"
-        burger.style.background = "rgb(0,0,0,0.0001)"
+        document.querySelector('.container').style.background = "rgb(0,0,0,0.0001)"
         document.querySelector('.burger__1').style.opacity = 1
         document.querySelector('.burger__2').style.opacity = 1
     });
