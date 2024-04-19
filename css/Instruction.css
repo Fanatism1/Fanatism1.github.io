@@ -181,6 +181,9 @@ body {
 .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .wrapper2__counter_block .wrapper2__counter_text p:nth-child(1) {
   margin-right: 15px;
 }
+.container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .wrapper2__counter_block .custom-button img {
+  cursor: pointer;
+}
 .container .main .main__section1 .section1__container .section1__wrapper2 .section1__swipee_block .wrapper2__counter_block .custom-button .custom-prev {
   margin-right: 3.125vw;
 }
@@ -272,6 +275,7 @@ body {
   margin-bottom: 120px;
 }
 .container .main .main__section1 .section1__container .section1__button button {
+  cursor: pointer;
   font: 600 14px "Manrope";
   color: #fff;
   padding: 14px 60px;

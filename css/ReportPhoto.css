@@ -544,6 +544,7 @@
     margin-bottom: 0px;
   }
   .container .header .nav .burger__container .burger__block .burder__logo_block {
+    cursor: pointer;
     display: flex;
     align-items: center;
   }
@@ -748,7 +749,7 @@
   .container .header .nav .burger__container {
     display: block;
     box-sizing: border-box;
-    padding: 20px 20px 0 20px;
+    padding: 0;
     width: 100%;
     height: auto;
     position: relative;
