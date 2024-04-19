@@ -51,6 +51,10 @@
                     <li class="header__li"><img src="/img/user accountGREEN.png" alt=""></li>
                 </ol>
             </nav>
+            <div class="header__navigation">
+                <a href="">Головна /</a>
+                <a href="">Інструкція</a>
+            </div>
         </header>
         <main class="main">
             <section class="main__section1">
@@ -66,12 +70,12 @@
                             <button type="text">Підтвердити замовлення</button>
                         </div>
                         <div class="section1__nextButton">
-                            <button class="">Крок <span id="stepCounter">2</span><img src="/img/стрілка чорна.png" alt=""></button>
+                            <button class="buttonStep">Крок <span id="stepCounter">2</span><img src="/img/стрілка чорна.png" alt=""></button>
                         </div>
                     </div>
                     <div class="section1__wrapper2">
                         <div class="wrapper2__block_photo">
-                            <img src="/img/fotoinstruction1.png" alt="">
+                            <img id="wrapper2__change_photo" src="/img/fotoinstruction1.png" alt="">
                         </div>
                         <div class="section1__swipee_block">
                             <div class="wrapper2__counter_block">
@@ -169,12 +173,10 @@
                                                 458 4220.</p>
                                         </div>
                                     </div>
-                                    <div class="swiper-pagination"></div>
+                                        <div class="pagination"></div>
+                                    
                                 </div>
                             </div>
-                        </div>
-                        <div class="wrapper2__block_photo">
-                            <img id="changePhoto" src="/img/fotoinstruction1.png" alt="">
                         </div>
                     </div>
                     <div class="section1__button">
@@ -212,24 +214,30 @@
             freeMode: true,
             slidesPerView: 1,
             spaceBetween: 0,
-            loop: false,
+            loop: true,
             pagination: {
-                el: ".swiper-pagination",
+                el: ".pagination",
                 clickable: true,
             },
             breakpoints: {
-                300:{
+                0:{
                     navigation: {
-                        nextEl: ".section1__nextButton",
+                        nextEl: ".buttonStep",
+                    }
                 },
-                loop: true,
-                },
-                420:{
+                768:{
                     navigation: {
-                        nextEl: ".section1__nextButton",
+                        nextEl: ".custom-next",
                         prevEl: ".custom-prev",
-                }
+                    }
                 },
+                1200:{
+                    navigation: {
+                        nextEl: ".custom-next",
+                        prevEl: ".custom-prev",
+                        loop: true,
+                    }
+                }
             },
             navigation: {
                 nextEl: ".custom-next",

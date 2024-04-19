@@ -51,20 +51,31 @@ clickCircle.forEach((item) => {
 
 const buttonBaby = document.querySelector('.baby__button');
 const buttonTeen = document.querySelector('.tenn__button');
-
+const swiper__active1 = document.querySelector('.swiper__active-1')
+const swiper__active2 = document.querySelector('.swiper__active-2')
 function toggleButton(activeButton, inactiveButton) {
     activeButton.style.background = 'black';
     activeButton.style.color = 'white';
     inactiveButton.style.background = 'white';
     inactiveButton.style.color = 'black';
+
 }
 
 buttonBaby.addEventListener('click', () => {
     toggleButton(buttonBaby, buttonTeen);
+    if(swiper__active1.style.display == 'block'){
+        swiper__active1.style.display = 'none';
+        swiper__active2.style.display = 'block';
+    }
+
 });
 
 buttonTeen.addEventListener('click', () => {
     toggleButton(buttonTeen, buttonBaby);
+    if(swiper__active1.style.display == 'none'){
+        swiper__active1.style.display = 'block';
+        swiper__active2.style.display = 'none';
+    }
 });
 
 // Встановлення початкових стилів

@@ -26,11 +26,12 @@
     min-height: 100vh
     .header
         margin-bottom: 140px
+        padding:2.08vw 4.16vw 0 4.16vw
         .nav
             width: auto
             display: flex
             justify-content: space-between
-            padding:2.08vw 4.16vw 0 4.16vw       //40px 0 0 80px
+            margin-bottom: 15px
             .burger__container
                 display: none
             .header__liFirst
@@ -46,41 +47,23 @@
                     margin-right: 3.125vw//60px
                     a
                         text-decoration: none
-                        font: 400 24px 'Manrope'
+                        font: 400 1.1vw 'Manrope'
                         color: #1A5653
                 .header__li:last-child
                     margin: 0
                     cursor: pointer
-        .header__section
-            height: 90%
-            display: flex
-            justify-content: center
-            align-items: center
-            div
-                h1
-                    font: 700 64px 'e-Ukraine'
-                    color: #0b0a0a8e8
-                    margin-bottom: 50px
-                p
-                    font: 400 32px 'Manrope'
-                    color: #1A5653
-                    text-align: center
-                    margin-bottom: 90px
-                div
-                    display: flex
-                    justify-content: center
-                    button
-                        padding: 24px 60px
-                        background:  #1A5653
-                        border-radius: 999px
-                        a
-                            text-decoration: none
-                            text-align: center
-                            font: 600 24px 'Manrope'
-                            color:  #1A5653
+        .header__navigation
+            a
+                color: black
+                text-decoration: none
+                display: inline
+                font: 400 1.1vw 'Manrope'
+            a:first-child
+                color: grey
+        
     .main
         .main__section1
-            padding: 0 80px 0 80px
+            padding: 0 4vw//0 80px 0 80px
             margin-bottom: 106px
             .section1__container
                 .section1__block_info
@@ -175,14 +158,10 @@
 @media screen and ( max-width:1280px  )//1236px
     .container
         .header
-            margin-bottom: 70px
-            //max-height: 550px
-            //height: 100vh//1050px
-            
+            margin-bottom: 70px            
             .nav
                 display: flex
                 justify-content: space-between
-                padding:2.08vw 4.16vw 0 4.16vw       //40px 0 0 80px
                 .header__liFirst
                     //margin-right: 17.5vw//336px
                     font: bold 24px 'e-Ukraine'
@@ -223,7 +202,7 @@
                                 color: #000
         .main
             .main__section1
-                padding: 0 80px 0 80px
+                padding: 0 4vw
                 margin-bottom: 106px
                 .section1__container
                     .section1__block_info
@@ -231,7 +210,7 @@
                         justify-content: space-between
                         margin-bottom: 70px
                         .section1__block_title
-                            font: 700 48px 'e-Ukraine'
+                            font: 700 38px 'e-Ukraine'
                             color: rgb(0,21,24)
                         div
                             display: flex
@@ -317,12 +296,9 @@
     .container
         .header
             margin-bottom: 70px
-            //max-height: 550px
-            //height: 50vh//550px
             .nav
                 display: flex
                 justify-content: space-between
-                padding:2.08vw 4.16vw 0 4.16vw       //40px 0 0 80px
                 .header__liFirst
                     //margin-right: 17.5vw//336px
                     font: bold 16px 'e-Ukraine'
@@ -334,7 +310,7 @@
                         margin-right: 3.125vw//60px
                         a
                             text-decoration: none
-                            font: 400 10px 'Manrope'
+                            font: 400 11px 'Manrope'
                     .header__li:last-child
                         margin: 0
                         img
@@ -365,6 +341,9 @@
                                 text-align: center
                                 font: 600 14px 'Manrope'
                                 color: #000
+            .header__navigation
+                a
+                    font-size: 11px
         .main
             .main__section1
                 padding: 0 4vw
@@ -375,7 +354,7 @@
                         justify-content: space-between
                         margin-bottom: 70px
                         .section1__block_title
-                            font: 700 48px 'e-Ukraine'
+                            font: 700 38px 'e-Ukraine'
                             color: rgb(0,21,24)
                         div
                             display: flex
@@ -458,7 +437,7 @@
                     .footer__list2
                         li:last-child
                             margin: 0
-@media screen and ( max-width:737px  )//1236px
+@media screen and ( max-width:768px  )//1236px
     .container
         overflow: hidden
         .header
@@ -468,6 +447,7 @@
             //max-height: 550px
             //height: 60vh//100vh
             .nav
+                margin-bottom: 0
                 position: relative
                 overflow: hidden
                 display: flex
@@ -482,7 +462,7 @@
                 .burger__container
                     display: block
                     box-sizing: border-box
-                    padding: 20px 20px 0 20px
+                    padding:0 //20px 20px 0 20px
                     width: 100%
                     height: auto//100vh
                     position: relative
@@ -491,7 +471,7 @@
                         display: flex
                         align-items: center
                         justify-content: space-between
-                        margin-bottom: 30px
+                        margin-bottom: 0px
                         .burder__logo_block
                             display: flex
                             align-items: center
@@ -540,7 +520,7 @@
                         margin-right: 3.125vw//60px
                         a
                             text-decoration: none
-                            font: 400 10px 'Manrope'
+                            font: 400 11px 'Manrope'
                             color: #fff
                     .header__li:last-child
                         display: block
@@ -548,37 +528,6 @@
                         img
                             width: 30px
                             height: 30px
-            .header__section
-                display: flex
-                justify-content: center
-                height: 60%
-                div
-                    div
-                        text-align: center
-                        h1
-                            width: min-content
-                            font: 700 23px 'e-Ukraine'
-                            color: #fff
-                            margin-bottom: 20px
-                            display: block
-                    p
-                        font: 400 14px 'Manrope'
-                        color: #fff
-                        text-align: center
-                        margin-bottom: 20px
-                    div
-                        display: flex
-                        justify-content: center
-                        button
-                            border: 0
-                            padding: 4px 15px
-                            background: #fff
-                            border-radius: 999px
-                            a
-                                text-decoration: none
-                                text-align: center
-                                font: 600 14px 'Manrope'
-                                color: #000
         .main
             .main__section1
                 padding: 0 5vw//0 80px 0 80px

@@ -38,31 +38,83 @@ li1.forEach((item) => {
 
 
 const instructionCounter = document.querySelector(".wrapper2__counter1")
+let counterValue = parseInt(instructionCounter.textContent)
 const stepCounter = document.getElementById('stepCounter')
+let stepCounterValue = parseInt(stepCounter.textContent)
 const instructionCustomPrev = document.querySelector(".custom-prev")
 const instructionCustomNext = document.querySelector(".custom-next")
-const instructionCustomNext_2 = document.querySelector(".section1__nextButton")
-let counterValue = parseInt(instructionCounter.textContent)
-let stepCounterValue = parseInt(stepCounter.textContent)
+const buttonStep = document.querySelector(".buttonStep")
+let photoInstruction1 = document.getElementById('wrapper2__change_photo')
+let photoInstruction2 = document.getElementById('changePhoto')
 
-instructionCustomPrev.addEventListener('click' , ()=> {
-    if (instructionCounter.textContent == 1 ){
-    }else{
-        counterValue -=1
-        instructionCounter.textContent = counterValue
+function Value(button){
+    if(button == instructionCustomPrev){
+        counterValue -= 1
+        if(counterValue == 0){
+            counterValue = 6
+            instructionCounter.textContent = counterValue
 
+        }else{
+            instructionCounter.textContent = counterValue
+        }
+        return switchMain(counterValue)
+    }if (button == instructionCustomNext || button == instructionCustomNext_2 ){
+        counterValue += 1
+        if(stepCounterValue < 7){
+            stepCounterValue += 1
+            stepCounter.textContent = stepCounterValue
+            if(counterValue == 6){
+                stepCounterValue = 1
+                stepCounter.textContent = stepCounterValue
+            }
+
+        }if(counterValue == 7){
+            counterValue = 1
+            instructionCounter.textContent = counterValue
+        }
+        else{
+            instructionCounter.textContent = counterValue
+            
+        } 
+        return switchMain(counterValue)
     }
+}
+
+function switchMain(value){
+    switch(value){
+        case (1):{
+            photoInstruction1.src = "http://127.0.0.1:5500/img/fotoinstruction1.png"
+            break;
+        }
+        case (2):{
+            photoInstruction1.src = "http://127.0.0.1:5500/img/fotoinstruction2.png"
+            break;
+        }
+        case (3):{
+            photoInstruction1.src = "http://127.0.0.1:5500/img/fotoinstruction3.png"
+            break;
+        }
+        case (4):{
+            photoInstruction1.src = "http://127.0.0.1:5500/img/fotoinstruction4.png"
+            break;
+        }
+        case (5):{
+            photoInstruction1.src = "http://127.0.0.1:5500/img/fotoinstruction5.png"
+            break;
+        }
+        case (6):{
+            photoInstruction1.src = "http://127.0.0.1:5500/img/fotoinstruction6.png"
+            break;
+        }
+    }
+}
+instructionCustomPrev.addEventListener('click' , ()=> {
+    Value(instructionCustomPrev)
 })
 instructionCustomNext.addEventListener('click' , ()=> {
-    if (instructionCounter.textContent == 6 ){
-    }else{
-        counterValue +=1
-        instructionCounter.textContent = counterValue
-
-    }
+    Value(instructionCustomNext)
 })
-
-instructionCustomNext_2.addEventListener('click' , ()=> {
-    document.getElementById('changePhoto').src = '/img/fotoinstruction2.png'
+buttonStep.addEventListener('click' , ()=> {
+    Value(instructionCustomNext)
 })
 
