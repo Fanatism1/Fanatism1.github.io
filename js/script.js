@@ -4,31 +4,33 @@ const burger = document.querySelector('.burger__container');
 const li1 = document.querySelectorAll('.header__li1');
 click.addEventListener('click',()=>{
     if(ol.style.display == "flex"){
-        ol.style.display = "none"
+        ol.style.display = "none" 
         document.querySelector('.container').style.height = "auto"
-        document.querySelector('.header').style.height = 70+'vh'
-        document.querySelector('.container').style.background = "none"
+        // document.querySelector('.header').style.height = 70+'vh'
+        document.querySelector('.header__section').style.display = 'block'
+        document.querySelector('.nav').style.background = "none"
         document.querySelector('.burger__1').style.opacity = 1
         document.querySelector('.burger__2').style.opacity = 1
     }else{
         ol.style.display = 'flex'
         document.querySelector('.container').style.height = 100 +'vh'
-        document.querySelector('.header').style.height = 100 +'vh'
-        document.querySelector('.container').style.background = "rgb(0,0,0,0.5)"
+        // document.querySelector('.header').style.height = 100 +'vh'
+        document.querySelector('.header__section').style.display = 'none'
+        document.querySelector('.nav').style.background = "rgb(0,0,0,0.5)"
         document.querySelector('.burger__1').style.opacity = 0
         document.querySelector('.burger__2').style.opacity = 0
     }
 })
-li1.forEach((item) => {
-    item.addEventListener('click', () => {
-        document.querySelector('.header').style.height = 'auto';
-        document.querySelector('.container').style.height = 'auto';
-        ol.style.display = "none"
-        document.querySelector('.container').style.background = "rgb(0,0,0,0.0001)"
-        document.querySelector('.burger__1').style.opacity = 1
-        document.querySelector('.burger__2').style.opacity = 1
-    });
-});
+// li1.forEach((item) => {
+//     item.addEventListener('click', () => {
+//         document.querySelector('.header').style.height = 'auto';
+//         document.querySelector('.container').style.height = 'auto';
+//         ol.style.display = "none"
+//         document.querySelector('.container').style.background = "rgb(0,0,0,0.0001)"
+//         document.querySelector('.burger__1').style.opacity = 1
+//         document.querySelector('.burger__2').style.opacity = 1
+//     });
+// });
 
 const clickCircle = document.querySelectorAll('.clickCircle');
 
