@@ -24,7 +24,7 @@
                                 <div class="burger__3"></div>
                             </div>
                         </div>
-                        <h1 class="header__liFirst1">DragonLab<br>DRONES</h1>
+                        <img class="header__logo " src="/img/logo-title.png"/>
                         <a class="burger__profile" href="/html/MyProfile.html"><img src="/img/user accountIcons.png" alt=""></a>
                     </div>
                     <div class="burger__block2">
@@ -39,7 +39,7 @@
                     </div>
                 </div>
                 
-                <h1 class="header__liFirst">DragonLab<br>DRONES</h1>
+                <img class="header__logo header__logo_off" src="/img/logo-title.png"/>
                 <ol class='header__ol'>
                     <li class="header__li"><a href="" class="">Головна</a></li>
                     <li class="header__li"><a href="#aboutUs" class="">Про нас</a></li>
@@ -97,13 +97,13 @@
                                         дрони.</p>
                                     <div class="section2__block_photo">
                                         <div>
-                                            <img src="/img/section2_photo1.png" alt="">
+                                            <img src="/img/smile-1.png" alt="">
                                         </div>
                                         <div>
-                                            <img src="/img/section2_photo2.png" alt="">
+                                            <img src="/img/smile-2.png" alt="">
                                         </div>
                                         <div>
-                                            <img src="/img/section2_photo3.png" alt="">
+                                            <img src="/img/smile-3.png" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -260,8 +260,8 @@
                                                 <img class="clickCircle" src="/img/sircleEmptyXl.png" alt="" data-status="empty">
                                             </div>
                                             <div class='block3__slide_subtext3'>
-                                                <p>Запчастина: Apex/Apex HD</p>
-                                                <p>Модель: 7 inch</p>
+                                                <p>Запчастина: Apex/Apex HD<br>Модель: 7 inch</p>
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -519,7 +519,7 @@
         </main>
         <footer id="footer" class="footer">
             <div>
-                <p class="header__liFirst">DragonLab<br>DRONES</p>
+                <img class="header__logo " src="/img/logo-title.png"/>
                 <div class="footer_wrapper">
                     <ol class="footer__list1">
                         <li>Дані для переадресації посилки:</li>
@@ -548,7 +548,6 @@
     <script>
         var swiper = new Swiper(".mySwiper", {
         slidesPerView: 4,
-          spaceBetween: 25,
           loop: true,
         //   pagination: {
         //     el: ".swiper-pagination",
@@ -569,19 +568,20 @@
                 slidesPerView: 3
             },
             700:{
-                slidesPerView: 4
-            },
-            1000:{
-                slidesPerView: 4
+                slidesPerView: 4,
+                spaceBetween: 15,
             },
             1200:{
-                slidesPerView: 4
+                slidesPerView: 4,
+                spaceBetween: 20,
             },
             1682: {
-            slidesPerView: 4
+                slidesPerView: 4,
+                spaceBetween: 30
             },
             3500: {
-                slidesPerView: 4
+                slidesPerView: 4,
+                
             }
         }
     },

@@ -21,23 +21,23 @@
   font-display: swap
 
 .container 
+    overflow: hidden
     display: grid
     grid-template-rows: auto 1fr auto
     min-height: 100vh
     .header
+        padding:2.08vw 4.16vw 0 4.16vw       
         margin-bottom: 140px
         .nav
             width: auto
             display: flex
             justify-content: space-between
-            padding:2.08vw 4.16vw 0 4.16vw       //40px 0 0 80px
+            margin-bottom: 25px
             .burger__container
                 display: none
-            .header__liFirst
-                //margin-right: 17.5vw//336px
-                font: bold 28px 'e-Ukraine'
-                color: #1A5653
-                margin-right: 40px
+            .header__logo
+                width: 250px
+                height: 100%
             .header__ol
                 display: flex
                 align-items: center
@@ -46,8 +46,13 @@
                     margin-right: 3.125vw//60px
                     a
                         text-decoration: none
-                        font: 400 24px 'Manrope'
+                        font: 400 22px 'Manrope'
                         color: #1A5653
+                    a:hover 
+                        cursor: pointer
+                        border-bottom: 1px solid #1A5653
+                    .last_a:hover
+                        border-bottom: 0
                 .header__li:last-child
                     display: flex
                     align-items: center
@@ -56,14 +61,16 @@
                     a
                         display: flex
                         align-items: center
-                        text-decoration: underline
+                        
                         span
                             margin-right: 15px
+                            border-bottom: 1px solid black
                         img
                             width: 2.5vw
                             height: 2.5vw
        
     .main
+        margin-bottom: 200px
         .main__section1
             display: flex
             justify-content: center
@@ -85,7 +92,8 @@
                         height: 65px  
                         width: 100%
                     input:focus
-                        border: 5px solid  rgb(16, 120, 105)
+                        outline: none
+                        border: 1.4px solid  rgb(16, 120, 105)
                         color: rgb(16, 120, 105)
                 .section1__input_text
                     margin-bottom: 30px
@@ -96,10 +104,14 @@
                     display: flex
                     justify-content: end 
                     align-items: center
-                    p
+                    a
+                        text-decoration: none
                         margin-right: 5px
                         font: 500 16px 'Manrope'
                         color: rgb(26, 86, 83)
+                    a:hover
+                        cursor: pointer
+                        text-decoration: underline
                     img
                         height: 10px
                         width: 15px
@@ -128,25 +140,52 @@
                         color: rgb(140,140,140)
     .footer
         display: none
+        padding: 3.12vw 6.16vw 4.25vw 4.16vw  //60px 80px 120px 80px
+        background: rgb(26, 86, 83)
+        border-top-left-radius: 30px
+        border-top-right-radius: 30px
+        div
+            display: flex
+            justify-content: space-between
+            .header__logo
+                width: 250px
+                height: 55px
+            .footer_wrapper
+                display: flex
+                .footer__list1 ,.footer__list2
+                    li
+                        font: 300 20px 'Manrope'
+                        color: rgb(245,245,245)
+                        margin-bottom: 20px
+                        a
+                            text-decoration: none
+                            color: rgb(245,245,245)
+                        a:hover 
+                            border-bottom: 1.5px solid #fff
+                .footer__list1
+                    margin-right: 11.97vw //215px
+                    li:first-child
+                        font: 500 20px 'Manrope'  
+                        margin-bottom: 67px
+                    li:last-child
+                        margin: 0
+                .footer__list2
+                    li:last-child
+                        margin: 0
 
 
 
-
-@media screen and ( max-width:1280px  )//1236px
+@media screen and ( max-width:1610px  )
     .container
         .header
             margin-bottom: 70px
-            //max-height: 550px
-            //height: 100vh//1050px
-            
             .nav
                 display: flex
                 justify-content: space-between
-                padding:2.08vw 4.16vw 0 4.16vw       //40px 0 0 80px
-                .header__liFirst
-                    //margin-right: 17.5vw//336px
-                    font: bold 24px 'e-Ukraine'
-                    margin-right: 40px
+                margin-bottom: 25px
+                .header__logo
+                    width: 200px
+                    margin-right: 30px
                 .header__ol
                     display: flex
                     align-items: center
@@ -157,44 +196,18 @@
                             font: 400 15px 'Manrope'
                     .header__li:last-child
                         margin: 0
-            .header__section
-                align-items: center
-                display: flex
-                justify-content: center
-                div
-                    h1
-                        font: 700 38px 'e-Ukraine'
-                        margin-bottom: 50px
-                    p
-                        font: 400 20px 'Manrope'
-                        text-align: center
-                        margin-bottom: 60px
-                    div
-                        display: flex
-                        justify-content: center
-                        button
-                            border: 0
-                            padding: 8px 30px
-                            border-radius: 999px
-                            a
-                                text-decoration: none
-                                text-align: center
-                                font: 600 20px 'Manrope'
 
-@media screen and ( max-width:1050px  )//1236px
+@media screen and ( max-width:1280px  )//1236px
     .container
         .header
             margin-bottom: 70px
-            //max-height: 550px
-            //height: 50vh//550px
             .nav
                 display: flex
                 justify-content: space-between
-                padding:2.08vw 4.16vw 0 4.16vw       //40px 0 0 80px
-                .header__liFirst
-                    //margin-right: 17.5vw//336px
-                    font: bold 16px 'e-Ukraine'
-                    margin-right: 40px
+                margin-bottom: 10px
+                .header__logo
+                    width: 120px
+                    margin-right: 30px
                 .header__ol
                     display: flex
                     align-items: center
@@ -204,58 +217,121 @@
                             text-decoration: none
                             font: 400 12px 'Manrope'
                     .header__li:last-child
-                        margin: 0
-                        img
-                            width: 30px
-                            height: 30px
-            .header__section
-                align-items: center
+                        margin: 0  
+        .main
+            .main__section1
                 display: flex
                 justify-content: center
-                height: 370px
-                div
-                    h1
-                        font: 700 23px 'e-Ukraine'
-                        margin-bottom: 20px
-                    p
-                        font: 400 14px 'Manrope'
+                .section1__wrapper
+                    width: 574px
+                    .section1__title
                         text-align: center
+                        h1
+                            font: 700 28px 'e-Ukraine'
+                            margin-bottom: 66px
+                    .section1__input_text,.section1__input_pass
+                        input
+                            box-sizing: border-box
+                            border: 1px solid black
+                            padding-left: 28px
+                            border-radius: 999px
+                            font: 400 14px 'Manrope'
+                            color: grey
+                            height: 45px  
+                            width: 100%
+                    .section1__input_text
                         margin-bottom: 20px
-                    div
+                    .section1__input_pass
+                        margin-bottom: 10px
+                    .section1__container
+                        margin-bottom: 30px
+                        display: flex
+                        justify-content: end 
+                        align-items: center
+                        p
+                            margin-right: 5px
+                            font: 500 12px 'Manrope'
+                            color: rgb(26, 86, 83)
+                        img
+                            height: 10px
+                            width: 15px
+                    .section1__enter
+                        text-align: center
+                        margin-bottom: 30px
+                        border-radius: 999px
+                        background: rgb(26, 86, 83)
+                        padding: 14px 0
+                        a
+                            height: min-content
+                            text-align: center
+                            text-decoration: none
+                            font: 600 14px 'Manrope'
+                            color: #fff
+                    .section1__nav
                         display: flex
                         justify-content: center
-                        button
-                            border: 0
-                            padding: 4px 15px
-                            border-radius: 999px
-                            a
-                                text-decoration: none
-                                text-align: center
-                                font: 600 14px 'Manrope'
-                                color: #000
+                        .section1__nav_tex1
+                            margin-right: 10px
+                            font: 400 12px 'Manrope'
+                            color: rgb(140,140,140)
+                        a
+                            text-decoration: none
+                            font: 600 12px 'Manrope'
+                            color: rgb(140,140,140)
+
+
+@media screen and ( max-width:1050px  )//1236px
+    .container
+        .header
+            margin-bottom: 70px
+            .nav
+                display: flex
+                justify-content: space-between
+                .header__logo
+
+                .header__ol
+                    display: flex
+                    align-items: center
+                    .header__li
+                        margin-right: 3.125vw//60px
+                        a
+                            text-decoration: none
+                            font: 400 10px 'Manrope'
+                    .header__li:last-child
+                        display: flex
+                        align-items: center
+                        margin: 0
+                        cursor: pointer
+                        a
+                            display: flex
+                            align-items: center
+                            
+                            span
+                                margin-right: 10px
+                            img
+                                width: 2.5vw
+                                height: 2.5vw
+
 @media screen and ( max-width:768px  )//1236px
     .container
         .header
+            padding: 0  
             overflow: hidden
             position: relative
             margin-bottom: 40px
-            //max-height: 550px
+            height: auto
             .nav
                 position: relative
                 overflow: hidden
-                display: flex
-                justify-content: space-between
-                padding: 0//2.08vw 4.16vw 0 4.16vw       //40px 0 0 80px
-                .header__liFirst
+                height: auto
+                .header__logo_off
                     display: none
-                    //margin-right: 17.5vw//336px
-                    font: bold 16px 'e-Ukraine'
-                    color: #fff
-                    margin-right: 0
+                .header__logo
+                    margin: 0
                 .burger__container
                     display: block
                     box-sizing: border-box
-                    padding: 2.08vw 4.16vw 0 4.16vw//20px 20px 0 20px
+                    padding: 20px 20px 0 20px
                     width: 100%
                     height: auto//100vh
                     position: relative
@@ -268,6 +344,7 @@
                         .burder__logo_block
                             display: flex
                             align-items: center
+                            cursor: pointer
                             .burder__logo_wrapper
                                 width: 30px
                                 height: min-content
@@ -287,9 +364,11 @@
                                 height: 30px
                     .burger__block2
                         display: none
-                        width: 100%
-                        height: 100vh
-                        justify-content: center
+                        transform: translate(-50%, -50%)
+                        left: 50%
+                        top: 50%
+                        position: absolute
+                        height: min-content
                         .header__ol1
                             position: static
                             display: block
@@ -321,37 +400,6 @@
                         img
                             width: 30px
                             height: 30px
-            .header__section
-                display: flex
-                justify-content: center
-                height: 60%
-                div
-                    div
-                        text-align: center
-                        h1
-                            width: min-content
-                            font: 700 23px 'e-Ukraine'
-                            color: #fff
-                            margin-bottom: 20px
-                            display: block
-                    p
-                        font: 400 14px 'Manrope'
-                        color: #fff
-                        text-align: center
-                        margin-bottom: 20px
-                    div
-                        display: flex
-                        justify-content: center
-                        button
-                            border: 0
-                            padding: 4px 15px
-                            background: #fff
-                            border-radius: 999px
-                            a
-                                text-decoration: none
-                                text-align: center
-                                font: 600 14px 'Manrope'
-                                color: #000
         .main
             margin-bottom: 100px
             padding: 0 4.16vw
@@ -377,10 +425,6 @@
                             color: grey
                             height: auto
                             width: 100%
-                        input:focus
-                            outline: none
-                            border: 1.4px solid  rgb(16, 120, 105)
-                            color: rgb(16, 120, 105)
                     .section1__input_text
                         margin-bottom: 30px
                     .section1__input_pass
@@ -420,67 +464,50 @@
                             font: 600 14px 'Manrope'
                             color: rgb(140,140,140) 
         .footer
-            display: flex
-            padding: 3.12vw 4.16vw 6.25vw 4.16vw  //60px 80px 120px 80px
+            display: block
             background: rgb(26, 86, 83)
-            border-top-left-radius: 10px//30px
-            border-top-right-radius: 10px//30px
+            padding: 3.12vw 6.16vw 3.25vw 4.16vw
             div
-                width: 100%
-                display: flex
-                justify-content: space-between
-                .header__liFirst
-                    display: block
-                    text-align: center
-                    font: bold 18px 'e-Ukraine'
-                    color: #fff
-                    margin-bottom:20px
+                .header__logo
+                    width: 120px
+                    height: 27px
                 .footer_wrapper
-                    width: auto
-                    display: flex
+                    height: 90px
                     .footer__list1 ,.footer__list2
+                        height: auto
                         li
-                            font: 300 11px 'Manrope'
+                            font: 300 8px 'Manrope'
                             margin-bottom: 5px
-                            color: rgb(245,245,245)
                             a
                                 text-decoration: none
                                 color: rgb(245,245,245)
                     .footer__list1
-                        margin-right:3vw //11.97px //215px
-                        margin-bottom: 0//20px
+                        display: flex
+                        flex-direction: column
                         li:first-child
-                            font: 500 12px 'Manrope'  
-                            margin-bottom: 20px
-                        li:last-child
-                            margin: 0
-                    .footer__list2
-                        li:last-child
-                            margin: 0    
+                            height: 100%
+                            display: flex
+                            flex: 1
+                            font: 500 10px 'Manrope' 
+                            margin-bottom: 0      
 
 
 @media screen and ( max-width:425px  )
     .container
         .header
-            margin-bottom: 40px
             overflow: hidden
             position: relative
+            margin-bottom: 40px
+            padding: 4.16vw 4.16vw 0 4.16vw       
             .nav
                 position: relative
                 overflow: hidden
                 display: flex
                 justify-content: space-between
-                padding: 0//2.08vw 4.16vw 0 4.16vw       //40px 0 0 80px
-                .header__liFirst
-                    display: none
-                    //margin-right: 17.5vw//336px
-                    font: bold 16px 'e-Ukraine'
-                    color: #fff
-                    margin-right: 0
                 .burger__container
                     display: block
                     box-sizing: border-box
-                    padding: 2.08vw 4.16vw 0 4.16vw//20px 20px 0 20px
+                    padding: 0//20px 20px 0 20px
                     width: 100%
                     height: auto//100vh
                     position: relative
@@ -489,7 +516,6 @@
                         display: flex
                         align-items: center
                         justify-content: space-between
-                        margin-bottom: 30px
                         .burder__logo_block
                             display: flex
                             align-items: center
@@ -512,9 +538,6 @@
                                 height: 30px
                     .burger__block2
                         display: none
-                        width: 100%
-                        height: 100vh
-                        justify-content: center
                         .header__ol1
                             position: static
                             display: block
@@ -546,37 +569,6 @@
                         img
                             width: 30px
                             height: 30px
-            .header__section
-                display: flex
-                justify-content: center
-                height: 60%
-                div
-                    div
-                        text-align: center
-                        h1
-                            width: min-content
-                            font: 700 23px 'e-Ukraine'
-                            color: #fff
-                            margin-bottom: 20px
-                            display: block
-                    p
-                        font: 400 14px 'Manrope'
-                        color: #fff
-                        text-align: center
-                        margin-bottom: 20px
-                    div
-                        display: flex
-                        justify-content: center
-                        button
-                            border: 0
-                            padding: 4px 15px
-                            background: #fff
-                            border-radius: 999px
-                            a
-                                text-decoration: none
-                                text-align: center
-                                font: 600 14px 'Manrope'
-                                color: #000
         .main
             padding: 0 4.16vw
             .main__section1
@@ -643,37 +635,27 @@
             display: flex
             justify-content: center
             padding: 40px 0 //1.5vw 2.08vw 3.10vw 2.08vw  //60px 80px 120px 80px
-            background: rgb(26, 86, 83)
-            border-top-left-radius: 10px//30px
-            border-top-right-radius: 10px//30px
             div
-                display: block
-                .header__liFirst
-                    display: block
-                    text-align: center
-                    font: bold 18px 'e-Ukraine'
-                    color: #fff
-                    margin: 0
+                display: flex
+                flex-direction: column
+                align-items: center
+                .header__logo
                     margin-bottom:20px
                 .footer_wrapper
+                    height: auto
                     display: block
                     .footer__list1 ,.footer__list2
                         li
                             text-align: center
                             font: 300 9px 'Manrope'
                             margin-bottom: 5px
-                            color: #fff
-                            a
-                                text-decoration: none
-                                color: rgb(245,245,245)
                     .footer__list1
                         margin-right: 0//3vw //11.97px //215px
                         margin-bottom: 20px
+                        height: min-content
                         li:first-child
                             font: 500 10px 'Manrope'  
                             margin-bottom: 12px
-                        li:last-child
-                            margin: 0
-                    .footer__list2
+                            flex: 0
                         li:last-child
                             margin: 0

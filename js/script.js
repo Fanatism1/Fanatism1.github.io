@@ -21,16 +21,7 @@ click.addEventListener('click',()=>{
         document.querySelector('.burger__2').style.opacity = 0
     }
 })
-// li1.forEach((item) => {
-//     item.addEventListener('click', () => {
-//         document.querySelector('.header').style.height = 'auto';
-//         document.querySelector('.container').style.height = 'auto';
-//         ol.style.display = "none"
-//         document.querySelector('.container').style.background = "rgb(0,0,0,0.0001)"
-//         document.querySelector('.burger__1').style.opacity = 1
-//         document.querySelector('.burger__2').style.opacity = 1
-//     });
-// });
+
 
 const clickCircle = document.querySelectorAll('.clickCircle');
 
@@ -57,8 +48,9 @@ const swiper__active2 = document.querySelector('.swiper__active-2')
 function toggleButton(activeButton, inactiveButton) {
     activeButton.style.background = 'black';
     activeButton.style.color = 'white';
-    inactiveButton.style.background = 'white';
+    inactiveButton.style.background = 'none';
     inactiveButton.style.color = 'black';
+    
 
 }
 
