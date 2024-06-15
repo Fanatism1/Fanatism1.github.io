@@ -148,6 +148,7 @@
   text-decoration: none;
   font: 600 24px "Manrope";
   color: #fff;
+  border: 0;
 }
 .container .footer {
   padding: 3.12vw 6.16vw 4.25vw 4.16vw;
@@ -857,7 +858,7 @@
   }
   .container .footer div .footer_wrapper .footer__list1 li, .container .footer div .footer_wrapper .footer__list2 li {
     text-align: center;
-    font: 300 9px "Manrope";
+    font: 300 11px "Manrope";
     margin-bottom: 5px;
   }
   .container .footer div .footer_wrapper .footer__list1 {
@@ -866,7 +867,7 @@
     height: min-content;
   }
   .container .footer div .footer_wrapper .footer__list1 li:first-child {
-    font: 500 10px "Manrope";
+    font: 500 12px "Manrope";
     margin-bottom: 12px;
     flex: 0;
   }

@@ -120,3 +120,22 @@ buttonStep.addEventListener('click' , ()=> {
     Value(instructionCustomNext)
 })
 
+
+// Вспливаюче вікно
+
+let section1__button = document.querySelectorAll('.button')
+let PopUp = document.querySelector('.PopUp__container')
+let PopUpCross = document.querySelector('.PopUp__cross')
+let container = document.querySelector('.container')
+
+section1__button.forEach((btn) => {
+    btn.addEventListener('click' , () => {
+        PopUp.style.display = "block"
+        container.style.height = "100vh"
+    })
+})
+
+PopUpCross.addEventListener('click' , () => {
+    PopUp.style.display = "none"
+    container.style.height = "auto"
+})

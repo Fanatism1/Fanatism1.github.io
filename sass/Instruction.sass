@@ -22,15 +22,18 @@
 *
     box-sizing: border-box
 body
+    position: relative
     dispaly: grid
     grid-template-rows: 1fr auto
     min-height: 100vh
     background: linear-gradient(186.67deg, rgba(245, 245, 245, 0.4) 17.93%, rgba(71, 140, 92, 0.4) 62.19%, rgba(245, 245, 245, 0.4) 107.52%)
 
-
+html
+    font-size: 24px
 .container 
     overflow: hidden
     display: grid
+    //display: none
     grid-template-rows: auto 1fr auto
     min-height: 100vh
     .header
@@ -211,12 +214,12 @@ body
                     margin-bottom: 120px
                     button
                         cursor: pointer
-                        font: 600 14px 'Manrope'
+                        font: 600 1.4vw 'Manrope'
                         color: #fff
-                        padding: 14px 60px
+                        padding: 20px 60px
                         border: 0
                         background: #1A5653
-                        border-radius: 30px
+                        border-radius: 930px
     .footer
         padding: 3.12vw 6.16vw 4.25vw 4.16vw  //60px 80px 120px 80px
         background: rgb(26, 86, 83)
@@ -250,7 +253,74 @@ body
                 .footer__list2
                     li:last-child
                         margin: 0
-
+.PopUp__container 
+    position: absolute
+    height: 100vh
+    width: 100vw
+    z-index: 100
+    display: none
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    .PopUp
+        z-index: 100
+        position: relative
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        background: #fff
+        padding: 40px
+        width: 870px
+        border-radius: 30px
+        box-shadow: rgba(0,0,0,.8) 0 0 0 20000px
+        .image__block
+            display: flex
+            justify-content: end
+            margin-bottom: 20px
+            .PopUp__cross        
+            .PopUp__cross:hover
+                cursor: pointer
+        .block__text
+            display: flex
+            flex-direction: column
+            align-items: center
+            .PopUp__title
+                width: max-content
+                font-size: 1rem
+                font: 400 1rem 'Manrope'
+                margin-bottom: 60px
+            .block__link
+                display: flex
+                justify-content: center
+                margin-bottom: 30px
+                .PopUp__link
+                    background-color: #1A5653
+                    padding: 18px 60px
+                    border-radius: 999px
+                    color: #fff
+                    font: 400 1rem 'Manrope'
+                    text-decoration: none
+                .PopUp__link:hover
+                    background-color: #23706c
+            .block__subText
+                display: flex
+                justify-content: center
+                .subText_1 , .subText_2
+                    font: 600 1rem 'Manrope'
+                    text-decoration: none
+                    color: #8C8C8C
+                .subText_1
+                    margin-right: 15px
+                    font: 400 1rem 'Manrope'
+                .subText_2:hover
+                    border-bottom: 1.5px solid  #8C8C8C
+.popUp_2 
+    .PopUp 
+        .block__text 
+            .PopUp__title
+                margin-bottom: 0
+            .image__wrapper
+                margin-top: 40px
 .swiper-slide1_block::-webkit-scrollbar
     width: 3px 
     height: 3px
@@ -407,6 +477,7 @@ body
                 .section1__container 
                     .section1__button button 
                         font: 500 14px 'Manrope'
+                        padding: 15px 45px
 @media screen and ( max-width:1300px)
     .container
         .header
@@ -516,7 +587,55 @@ body
             .header__navigation 
                 a,p
                     font-size: 8px
-
+    .PopUp__container
+        padding: 0 10px
+        .PopUp
+            border-radius: 20px
+            padding: 30px
+            width: 100%
+            max-width: 650px
+            .image__block
+                display: flex
+                justify-content: end
+                margin-bottom: 25px
+                .PopUp__cross       
+                    height: 22px 
+                .PopUp__cross:hover
+                    cursor: pointer
+            .block__text
+                .PopUp__title
+                    width: max-content
+                    font: 400 0.83rem 'Manrope'
+                    margin-bottom: 45px
+                .block__link
+                    display: flex
+                    justify-content: center
+                    margin-bottom: 30px
+                    .PopUp__link
+                        padding: 13px 40px
+                        font: 400 0.83rem 'Manrope'
+                    .PopUp__link:hover
+                        background-color: #23706c
+                .block__subText
+                    display: flex
+                    justify-content: center
+                    .subText_1 , .subText_2
+                        font: 600 0.83rem 'Manrope'
+                    .subText_1
+                        margin-right: 15px
+                        font: 400 0.83rem 'Manrope'
+                    .subText_2:hover
+                        border-bottom: 1.5px solid  #8C8C8C
+    .popUp_2 
+        .PopUp 
+            .block__text 
+                .PopUp__title
+                    margin-bottom: 0
+                .image__wrapper
+                    margin-top: 30px
+                    img
+                        height: 65px 
+                        
 @media screen and ( max-width:769px  )//1236px//769
     .container
         box-sizing: border-box
@@ -800,6 +919,42 @@ body
                             flex: 1
                             font: 500 10px 'Manrope' 
                             margin-bottom: 0 
+    .PopUp__container
+        padding: 0 10px
+        .PopUp
+            border-radius: 20px
+            padding: 20px
+            width: 100%
+            max-width: 500px
+            .image__block
+                margin-bottom: 25px
+                .PopUp__cross       
+                    height: 16px 
+            .block__text
+                .PopUp__title
+                    width: max-content
+                    font: 400 0.58rem 'Manrope'
+                    margin-bottom: 35px
+                .block__link
+                    margin-bottom: 20px
+                    .PopUp__link
+                        padding: 10px 30px
+                        font: 400 0.58rem 'Manrope'
+                .block__subText
+                    .subText_1 , .subText_2
+                        font: 600 0.58rem 'Manrope'
+                    .subText_1
+                        margin-right: 15px
+                        font: 400 0.58rem 'Manrope'
+    .popUp_2 
+        .PopUp 
+            .block__text 
+                .PopUp__title
+                    margin-bottom: 0
+                .image__wrapper
+                    margin-top: 30px
+                    img
+                        height: 55px     
 
 @media screen and ( max-width:480px  )//1236px/// 425px
     .container
@@ -1052,15 +1207,52 @@ body
                     .footer__list1 ,.footer__list2
                         li
                             text-align: center
-                            font: 300 9px 'Manrope'
+                            font: 300 11px 'Manrope'
                             margin-bottom: 5px
                     .footer__list1
                         margin-right: 0//3vw //11.97px //215px
                         margin-bottom: 20px
                         height: min-content
                         li:first-child
-                            font: 500 10px 'Manrope'  
+                            font: 500 12px 'Manrope'  
                             margin-bottom: 12px
                             flex: 0
                         li:last-child
                             margin: 0
+    .PopUp__container
+        padding: 0 10px
+        .PopUp
+            border-radius: 20px
+            padding: 20px
+            width: 100%
+            max-width: 300px
+            .image__block
+                margin-bottom: 20px
+                .PopUp__cross       
+                    height: 16px 
+            .block__text
+                .PopUp__title
+                    font: 400 0.4rem 'Manrope'
+                    margin-bottom: 30px
+                .block__link
+                    margin-bottom: 15px
+                    .PopUp__link
+                        padding: 10px 30px
+                        font: 400 0.4rem 'Manrope'
+                .block__subText
+                    .subText_1 , .subText_2
+                        font: 600 0.4rem 'Manrope'
+                    .subText_1
+                        margin-right: 15px
+                        font: 400 0.4rem 'Manrope'
+    .popUp_2 
+        .PopUp 
+            .block__text 
+                .PopUp__title
+                    margin-bottom: 0
+                .image__wrapper
+                    margin-top: 20px
+                    img
+                        height: 36px 
+
+                   

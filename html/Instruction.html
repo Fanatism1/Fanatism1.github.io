@@ -67,7 +67,7 @@
                         <p class="section1__text">По отриманню замовлення, переадресуйте його на </p>
                         <p class="section1__text">Андрій Свистович, +380 96 458 4220.</p>
                         <div class="section1__button">
-                            <button type="text">Підтвердити замовлення</button>
+                            <button class="button" type="text">Підтвердити замовлення</button>
                         </div>
                         <div class="section1__nextButton">
                             <button class="buttonStep">Крок <span id="stepCounter">2</span><img src="/img/стрілка чорна.png" alt=""></button>
@@ -180,7 +180,7 @@
                         </div>
                     </div>
                     <div class="section1__button">
-                        <button type="text">Підтвердити замовлення</button>
+                        <button class="button" type="text">Підтвердити замовлення</button>
                     </div>
                 </div>
             </section>
@@ -207,7 +207,41 @@
                 </div>
             </div>
         </footer>
+        
     </div>
+    
+    <div class="popUp_1 PopUp__container">
+        <div class="PopUp">
+            <div class="image__block">
+                <img class="PopUp__cross" src="/img/close.png" alt="">
+            </div>
+            <div class="block__text">
+                <h1 class="PopUp__title">Необхідно зареєструватись для підтвердження замовлення:</h1>
+                <div class="block__link">
+                    <a href="/html/Registry.html" class="PopUp__link">Зареєструватися</a>
+                </div>
+                <div class="block__subText">
+                    <p class="subText_1">Маєте акаунт?</p>
+                    <a class="subText_2" href="/html/SingIn.html">Увійти</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popUp_2 PopUp__container ">
+        <div class="PopUp">
+            <div class="image__block">
+                <img class="PopUp__cross" src="/img/close.png" alt="">
+            </div>
+            <div class="block__text">
+                <div class="PopUp__title">Дякуємо за допомогу!</div>
+                <div class="PopUp__title">Ваше замовлення підтверджено!</div>
+                <div class="image__wrapper">
+                    <img class="image__button" src="/img/button-galka.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
